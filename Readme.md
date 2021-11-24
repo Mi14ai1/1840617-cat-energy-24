@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Михаил Бутько](https://up.htmlacademy.ru/adaptive/24/user/1840617).
-* Наставник: `Сергей Артёмов`.
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
