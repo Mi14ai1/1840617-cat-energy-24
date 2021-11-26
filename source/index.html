@@ -17,8 +17,9 @@
           </a>
         </div>
         <nav class="navigation">
-          <div class="navigation__menu-button"><span class="middle-line"></span></div>
-          <span class="visualyy-hidden">кнопка вызова меню</span>
+          <button class="navigation__menu-button" hidden>
+            <span class="visualyy-hidden">кнопка вызова меню</span>
+          </button>
           <ul class="navigation__list">
             <li class="navigation__list-item">
               <a href="#" class="navigation__link">Главная</a>
@@ -46,13 +47,11 @@
         </section>
         <section class="nutrition-programm">
           <div class="nutrition-programm__slim">
-            <img src="img/nutrition/slim-cat.svg" alt="похудение" class="nutrition-programm__image">
             <h2 class="nutrition-programm__title">Похудение</h2>
             <p class="nutrition-programm__text">Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить по&nbsp;деревьям? Пора на&nbsp;диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a href="#" class="nutrition-programm__link">Каталог slim</a>
           </div>
           <div class="nutrition-programm__slim">
-            <img src="img/nutrition/muscle-cat.svg" alt="похудение" class="nutrition-programm__image">
             <h2 class="nutrition-programm__title">Набор массы</h2>
             <p class="nutrition-programm__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a href="#" class="nutrition-programm__link">Каталог Pro</a>
@@ -63,25 +62,21 @@
           <ol class="description__list">
             <li class="description__list-item">
               <div class="description-reason">
-                <img class="description-reason__image" src="img/description/beneficial-nutrients.svg" alt="полезные ингридиенты">
                 <p class="description-reason__text">Функциональное питание содержит только полезные питательные вещества.</p>
               </div>
             </li>
             <li class="description__list-item">
               <div class="description-reason">
-                <img class="description-reason__image" src="img/description/powder.svg" alt="удобная форма выпуска">
                 <p class="description__text">Выпускается в&nbsp;виде порошка, который нужно лишь залить кипятком и&nbsp;готово.</p>
               </div>
             </li>
             <li class="description__list-item">
               <div class="description-reason">
-                <img class="description-reason__image" src="img/description/eating.svg" alt="прием пищи">
                 <p class="description__text">Замените один-два приема обычной еды на&nbsp;наше функциональное питание.</p>
               </div>
             </li>
             <li class="description__list-item">
               <div class="description-reason">
-                <img class="description-reason__image" src="img/description/timer.svg" alt="скорое достижение цели">
                 <p class="description__text">Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего питомца!</p>
               </div>
             </li>
@@ -106,7 +101,7 @@
               <img src="img/slider/cat-fat.png" alt="было" class="slider-images__was-image">
               <img src="img/slider/cat-skinny.png" alt="стало" class="slider-images__now-image">
             </div>
-            <div class="sliider-was-now">
+            <div class="sliider-was-now" hidden>
               <span class="sliider-was-now__text sliider-was-now__text--was">Было</span>
               <div class="progress">
                 <div class="progress-line">
