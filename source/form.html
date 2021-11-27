@@ -37,8 +37,8 @@
         <form action="https://echo.htmlacademy.ru" method="post" class="form-cat-program">
           <fieldset class="inputs-group inputs-group-cat-parametrs">
             <legend class="inputs-group__title visually-hidden">Имя, возраст, вес</legend>
-            <label class="inputs-group__input-label" for="name">Имя:*</label>
-            <input class="inputs-group__input" id="name" name="name" type="text" required value="Барсик" placeholder="Введите значение">
+            <label class="inputs-group__input-label" for="catname">Имя:*</label>
+            <input class="inputs-group__input" id="catname" name="catname" type="text" required value="Барсик" placeholder="Введите значение">
             <label class="inputs-group__input-label" for="weight">Вес (кг):*</label>
             <input class="inputs-group__input" id="weight" name="weight" type="number" required value="7" placeholder="Введите значение">
             <label class="inputs-group__input-label" for="age">Возраст (лет):*</label>
@@ -60,20 +60,13 @@
             <label class="inputs-group__input-label" for="phone">Телефон:*</label>
             <input class="inputs-group__input" id="phone" name="phone" type="tel" required value="8 (960) 900-60-90" placeholder="Введите номер вашего телефона">
           </fieldset>
-          <fieldset class="inputs-group inputs-group-user-comment">
-            <legend class="inputs-group__title">Комментарий</legend>
-            <textarea class="inputs-group__input inputs-group__input-text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
+          <label class="comment-label">Комментарий<textarea class="form-cat-program__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea></label>
           <fieldset class="inputs-group inputs-group-additionals">
             <legend class="inputs-group__title">Дополнения</legend>
-            <input class="inputs-group__input" id="sugar-substitiute" name="sugar-substitiute" type="checkbox" checked>
-            <label class="inputs-group__input-label" for="sugar-substitiute">сахарозаменитель</label>
-            <input class="inputs-group__input-checkbox" id="water" name="water" type="checkbox">
-            <label class="inputs-group__input-label" for="water">питьевая вода</label>
-            <input class="inputs-group__input-checkbox" id="milk" name="milk" type="checkbox">
-            <label class="inputs-group__input-label" for="milk">молоко</label>
-            <input class="inputs-group__input-checkbox" id="vitamins" name="vitamins" type="checkbox">
-            <label class="inputs-group__input-label" for="vitamins">витамины</label>
+            <input class="inputs-group__input" id="sugar-substitiute" name="additionals" value="sugar-substitiute" type="checkbox" checked><label class="inputs-group__input-label" for="sugar-substitiute">сахарозаменитель</label>
+            <input class="inputs-group__input-checkbox" id="water" name="additionals" value="water" type="checkbox"><label class="inputs-group__input-label" for="water">питьевая вода</label>
+            <input class="inputs-group__input-checkbox" id="milk" name="additionals" value="milk" type="checkbox"><label class="inputs-group__input-label" for="milk">молоко</label>
+            <input class="inputs-group__input-checkbox" id="vitamins" name="additionals" value="vitamins" type="checkbox"><label class="inputs-group__input-label" for="vitamins">витамины</label>
           </fieldset>
           <button type="submit">отправить заявку</button>
           <p class="requireds-description">* — Обязательные поля</p>
