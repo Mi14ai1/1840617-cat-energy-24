@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="logo-container">
+          <a href="#" class="logo-link">
+            <img src="img/header/logo-cat.svg" alt="" class="logo-img">
+            <img src="img/header/logo-words.svg" alt="" class="logo-words">
+          </a>
+        </div>
+        <nav class="navigation">
+          <button type="button" class="navigation__menu-button" hidden>
+            <span class="visualyy-hidden">кнопка вызова меню</span>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="index.html" class="navigation__link">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a href="catalog.html" class="navigation__link">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link current-page">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page__main">
+        <h1 class="page__title">Подбор программы</h1>
+        <p class="request-to-user">Заполните анкету, и&nbsp;мы&nbsp;подберем программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" method="post" class="form-cat-program">
+          <fieldset class="inputs-group inputs-group-cat-parametrs">
+            <legend class="inputs-group__title visually-hidden">Имя, возраст, вес</legend>
+            <label class="inputs-group__input-label" for="name">Имя:*</label>
+            <input class="inputs-group__input" id="name" name="name" type="text" required value="Барсик" placeholder="Введите значение">
+            <label class="inputs-group__input-label" for="weight">Вес (кг):*</label>
+            <input class="inputs-group__input" id="weight" name="weight" type="number" required value="7" placeholder="Введите значение">
+            <label class="inputs-group__input-label" for="age">Возраст (лет):*</label>
+            <input class="inputs-group__input" id="age" name="age" type="number" required value="7" placeholder="Введите значение">
+          </fieldset>
+          <fieldset class="inputs-group inputs-group-type-program">
+            <legend class="inputs-group__title visually-hidden">Тип программы</legend>
+            <input class="inputs-group__input-radio" id="slimming" name="program" value="slimming"  type="radio" checked>
+            <label class="inputs-group__input-label" for="slimming">похудение</label>
+            <input class="inputs-group__input-radio" id="weight-gain" name="program" value="weight-gain" type="radio">
+            <label class="inputs-group__input-label" for="weight-gain">Набор массы</label>
+            <input class="inputs-group__input-radio" id="not-decide" name="program"  value="not-decide" type="radio">
+            <label class="inputs-group__input-label" for="not-decide">Не знаю (Нужен ваш совет)</label>
+          </fieldset>
+          <fieldset class="inputs-group inputs-group-user-contacts">
+            <legend class="inputs-group__title">Контактные данные (владельца кота)</legend>
+            <label class="inputs-group__input-label" for="email">E-mail:*</label>
+            <input class="inputs-group__input" id="email" name="email" type="email" required value="kuklachev@gmail.com" placeholder="Введите ваш E-mail">
+            <label class="inputs-group__input-label" for="phone">Телефон:*</label>
+            <input class="inputs-group__input" id="phone" name="phone" type="tel" required value="8 (960) 900-60-90" placeholder="Введите номер вашего телефона">
+          </fieldset>
+          <fieldset class="inputs-group inputs-group-user-comment">
+            <legend class="inputs-group__title">Комментарий</legend>
+            <textarea class="inputs-group__input inputs-group__input-text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="inputs-group inputs-group-additionals">
+            <legend class="inputs-group__title">Дополнения</legend>
+            <input class="inputs-group__input" id="sugar-substitiute" name="sugar-substitiute" type="checkbox" checked>
+            <label class="inputs-group__input-label" for="sugar-substitiute">сахарозаменитель</label>
+            <input class="inputs-group__input-checkbox" id="water" name="water" type="checkbox">
+            <label class="inputs-group__input-label" for="water">питьевая вода</label>
+            <input class="inputs-group__input-checkbox" id="milk" name="milk" type="checkbox">
+            <label class="inputs-group__input-label" for="milk">молоко</label>
+            <input class="inputs-group__input-checkbox" id="vitamins" name="vitamins" type="checkbox">
+            <label class="inputs-group__input-label" for="vitamins">витамины</label>
+          </fieldset>
+          <button type="submit">отправить заявку</button>
+          <p class="requireds-description">* — Обязательные поля</p>
+        </form>
+        <section class="contacts">
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <p class="contacts__lead-text">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts__map"></div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="logo-container">
+          <a href="#" class="logo-link">
+            <img src="img/header/logo-words.svg" alt="" class="logo-words">
+          </a>
+        </div>
+        <div class="social">
+          <a href="https://vk.com/htmlacademy" target="_blank" class="social-link">HtmlAcademy vk</a>
+          <a href="https://www.instagram.com/htmlacademy/" target="_blank" class="social-link">HtmlAcademy instagram</a>
+          <a href="https://www.facebook.com/htmlacademy" target="_blank" class="social-link">HtmlAcademy facebook</a>
+        </div>
+        <div class="htmlacademy-logo"><a href="https://htmlacademy.ru/" target="_blank" class="htmlacademy-logo__link">HtmlAcademy</a></div>
+      </footer>
+    </div>
+  </body>
+</html>
