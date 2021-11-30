@@ -1,0 +1,28 @@
+<header class="page-header">
+  <div class="logo-container">
+    <a href="index.html" class="logo-link">
+      <img src="img/logo-cat.svg" alt="" class="logo-img">
+      <img src="img/logo-words.svg" alt="" class="logo-words">
+    </a>
+  </div>
+  <nav class="navigation">
+    <button class="navigation__menu-button" type="button" hidden>
+      <span class="visualyy-hidden">Кнопка вызова меню</span>
+    </button>
+    <ul class="navigation__list">
+      {% for page in pages %}
+        <li class="navigation__item">
+          <a
+            class="navigation__link"
+            href="{{ page.path }}"
+            {% if permalink === page.path %}
+              aria-current="page"
+            {% endif %}
+          >{{ page.name }}</a>
+        </li>
+      {% else %}
+        <li>Из навигации пропали все пункты 😕</li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

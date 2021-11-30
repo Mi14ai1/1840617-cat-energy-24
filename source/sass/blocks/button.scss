@@ -1,0 +1,8 @@
+.button {
+  font-family: var(--accent-font);
+  width: fit-content;
+
+  &--size_wide {
+    width: 100%;
+  }
+}
