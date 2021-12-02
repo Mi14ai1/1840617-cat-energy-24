@@ -3,5 +3,50 @@
 }
 
 .page__body {
+  --scrollbar: calc(100vw - 100%);
   margin: 0;
+}
+
+.page__centerer {
+  --content-indent: calc(20px + (10vw - 32px) / 4.48);
+
+  margin-inline: var(--content-indent) calc(var(--content-indent) - var(--scrollbar));
+
+  @media (--narrow-vp) {
+    --content-indent: calc(20px + (10vw - 32px) / 4.48);
+    margin: 0 auto;
+  }
+
+  @media (--middle-vp) {
+    --content-indent: 30px;
+    margin: 0 auto;
+  }
+
+  @media (--wide-vp) {
+    --content-indent: auto;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.page__form-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+
+  @media (--middle-vp) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  @media (--wide-vp) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }

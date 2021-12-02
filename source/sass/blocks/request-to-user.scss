@@ -1,0 +1,13 @@
+.request-to-user {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+
+  @media (--middle-vp) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,25 @@
+.background {
+  position: absolute;
+  max-width: 768px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/promo-background-mini.png");
+  background-size: cover;
+  z-index: -1;
+
+  @media (--middle-vp) {
+    display: none;
+  }
+
+  @media (--wide-vp) {
+    right: 0;
+    top: 0;
+    background-image: url("../../img/promo-background-max.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 50%;
+    width: 720px;
+    height: 694px;
+  }
+}

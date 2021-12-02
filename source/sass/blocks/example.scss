@@ -1,0 +1,83 @@
+.example {
+  background-color: #eaeaea;
+  padding: 25px 0;
+
+  @media (--wide-vp) {
+    display: flex;
+    padding: 70px 0;
+  }
+}
+
+.example__spending {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (--middle-vp) {
+    font-size: 20px;
+  }
+}
+
+.example__title {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+}
+
+.example__text {
+  font-family: "Arial", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--base-font-color);
+  margin: 0;
+}
+
+.example__facts {
+  @media (--wide-vp) {
+    max-width: 436px;
+  }
+}
+
+.example__facts-item-fact {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (--middle-vp) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__facts-item-explanation {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--base-font-color);
+  text-transform: lowercase;
+
+  @media (--middle-vp) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.example__facts-item-fact--spending {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (--middle-vp) {
+    font-size: 20px;
+  }
+}

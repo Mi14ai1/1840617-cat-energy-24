@@ -1,13 +1,13 @@
-<header class="page-header">
-  <div class="logo-container">
-    <a href="index.html" class="logo-link" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-      <img src="img/logo-cat.svg" alt="" class="logo-img">
-      <img src="img/logo-words.svg" alt="" class="logo-words">
-    </a>
-  </div>
+<header class="header">
   <nav class="navigation">
-    <button class="navigation__menu-button" type="button" hidden>
-      <span class="visualyy-hidden">Кнопка вызова меню</span>
+    <div class="navigation__logo-container">
+      <a href="index.html" class="navigation__logo-link" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
+        <img src="img/logo-cat.svg" alt="" class="logo-img">
+        <img src="img/logo-words.svg" alt="" class="logo-words">
+      </a>
+    </div>
+    <button class="navigation__menu-button" type="button">
+      <span class="visually-hidden">Кнопка вызова меню</span>
     </button>
     <ul class="navigation__list">
       {% for page in pages %}
