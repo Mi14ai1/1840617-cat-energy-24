@@ -1,0 +1,27 @@
+.example {
+  background-color: #eaeaea;
+  padding: 25px 20px;
+
+  @media (min-width: 769px) {
+    display: flex;
+    padding: 70px 110px;
+  }
+}
+
+.example__title {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+}
+
+.example__text {
+  font-family: "Arial", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+}

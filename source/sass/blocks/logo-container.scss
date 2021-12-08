@@ -1,0 +1,24 @@
+.logo-container {
+  flex: 1 0 auto;
+}
+
+.navigation__logo-link {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-sizing: border-box;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-decoration: none;
+
+  @media (min-width: 321px) and (max-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 174px;
+  }
+
+  @media (min-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 202px;
+  }
+}

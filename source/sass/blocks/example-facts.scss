@@ -1,0 +1,44 @@
+.example-facts {
+  @media (min-width: 769px) {
+    max-width: 436px;
+  }
+}
+
+.example-facts__item-fact {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (min-width: 321px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example-facts__item-explanation {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  text-transform: lowercase;
+
+  @media (min-width: 321px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.example-facts__item-fact--spending,
+.example__spending {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (min-width: 321px) {
+    font-size: 20px;
+  }
+}
