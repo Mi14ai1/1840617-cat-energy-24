@@ -1,7 +1,7 @@
 .navigation {
   display: flex;
   align-items: center;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 0 10px 0;
 
   @media (max-width: 321px) {
     display: flex;
@@ -10,13 +10,11 @@
   }
 
   @media (min-width: 321px) and (max-width: 769px) {
-    padding: 19px 30px 10px 20px;
+    padding: 19px 0 10px 0;
   }
 
   @media (min-width: 769px) {
     padding-top: 53px;
-    padding-left: 110px;
-    padding-right: 110px;
   }
 }
 
@@ -33,28 +31,26 @@
   @media (min-width: 321px) {
     display: none;
   }
+}
 
-  &::after {
-    content: url("data:image/svg+xml,%3Csvg width='24' height='18' viewBox='0 0 24 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000' stroke-width='1.5' d='M0 1.25h24M0 9.25h24M0 17.25h24'/%3E%3C/svg%3E");
-    display: block;
-    width: auto;
-    height: auto;
-    border: none;
-    outline: none;
-  }
+.navigation__menu-button::after {
+  content: url("data:image/svg+xml,%3Csvg width='24' height='18' viewBox='0 0 24 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000' stroke-width='1.5' d='M0 1.25h24M0 9.25h24M0 17.25h24'/%3E%3C/svg%3E");
+  display: block;
+  width: auto;
+  height: auto;
+  border: none;
+  outline: none;
+}
 
-  &:hover {
-    &::after {
-      content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath transform='scale(.97098 1.0282) rotate(-45 24.51 7.237)' stroke='%23000' stroke-width='1.5' d='M0-.75h24.758'/%3E%3Cpath transform='matrix(.68659 .72705 -.68659 .72705 1 2)' stroke='%23000' stroke-width='1.5' d='M0-.75h24.758'/%3E%3C/svg%3E");
-      display: block;
-      width: auto;
-      height: auto;
-      border: none;
-      outline: none;
-    }
-  }
+.navigation__menu-button:hover + .navigation-list {
+  display: block;
+}
 
-  &:hover + .navigation-list {
-    display: block;
-  }
+.navigation__menu-button:hover::after {
+  content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath transform='scale(.97098 1.0282) rotate(-45 24.51 7.237)' stroke='%23000' stroke-width='1.5' d='M0-.75h24.758'/%3E%3Cpath transform='matrix(.68659 .72705 -.68659 .72705 1 2)' stroke='%23000' stroke-width='1.5' d='M0-.75h24.758'/%3E%3C/svg%3E");
+  display: block;
+  width: auto;
+  height: auto;
+  border: none;
+  outline: none;
 }

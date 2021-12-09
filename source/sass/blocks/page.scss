@@ -3,5 +3,26 @@
 }
 
 .page__body {
+  --scrollbar: calc(100vw - 100%);
   margin: 0;
+}
+
+.page__centerer {
+  --content-indent: calc(20px + (10vw - 32px) / 4.48);
+
+  margin-inline: var(--content-indent) calc(var(--content-indent) - var(--scrollbar));
+
+  @media (--narrow-vp) {
+    --content-indent: calc(20px + (10vw - 32px) / 4.48);
+  }
+
+  @media (--middle-vp) {
+    --content-indent: 30px;
+  }
+
+  @media (--wide-vp) {
+    --content-indent: auto;
+
+    width: 1220px;
+  }
 }

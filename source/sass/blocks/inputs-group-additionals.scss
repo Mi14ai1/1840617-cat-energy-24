@@ -1,0 +1,14 @@
+.inputs-group-additionals {
+  @media (min-width: 321px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    border: transparent;
+  }
+
+  @media (min-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

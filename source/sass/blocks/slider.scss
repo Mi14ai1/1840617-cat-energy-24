@@ -4,20 +4,20 @@
 
 .slider__images {
   position: relative;
+}
 
-  & .slider__image {
-    left: 0;
-    width: 100%;
-  }
+.slider__image {
+  left: 0;
+  width: 100%;
+}
 
-  & .slider__image--was {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 33%;
-  }
+.slider__image--was {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 33%;
 }

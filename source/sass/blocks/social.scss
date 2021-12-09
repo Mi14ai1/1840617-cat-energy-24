@@ -1,0 +1,16 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: 321px) {
+    border: transparent;
+    order: 0;
+  }
+}
+
+.social__link {
+  text-decoration: none;
+}

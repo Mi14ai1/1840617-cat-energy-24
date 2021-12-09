@@ -1,0 +1,12 @@
+.inputs-group-type-program {
+  margin: 0;
+
+  @media (min-width: 321px) {
+    padding: 25px 28px;
+    border: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: 769px) {
+    grid-column: 2/3;
+  }
+}

@@ -21,7 +21,7 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: var(--base-font-color);
   text-transform: lowercase;
 
   @media (min-width: 321px) {

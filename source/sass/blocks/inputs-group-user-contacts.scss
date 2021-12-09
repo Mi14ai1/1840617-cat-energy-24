@@ -1,0 +1,45 @@
+@media (min-width: 321px) {
+  .inputs-group-user-contacts {
+    border: transparent;
+  }
+}
+
+@media (min-width: 769px) {
+  .inputs-group-user-contacts {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 78px;
+  }
+}
+
+label[for="email"] {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    display: block;
+    width: 18px;
+    height: 13px;
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='14' viewBox='0 0 19 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23222' stroke-width='1.3' d='M1.19 6v8M18.19 6v8M.54 13.35h18M.54 1.35h18M17.89 3.182 9.54 9.677 1.19 3.182V1.65h16.7v1.532Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+label[for="phone"] {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)' fill='%23000'%3E%3Cpath d='M17.756 9.4H9.618v1.2h8.138l-2.01 2.1.861.9 2.968-3.1a.772.772 0 0 0 0-.9l-2.968-3.1-.861.9 2.01 2ZM8.374 19.4v-6.2a.663.663 0 0 0-.18-.411.611.611 0 0 0-.395-.189H3.587c.005.317.127.619.342.843.214.224.503.352.806.357H7.13v5H3.587a1.645 1.645 0 0 1-.669-.095 1.7 1.7 0 0 1-.581-.357 1.785 1.785 0 0 1-.405-.565 1.854 1.854 0 0 1-.164-.683v-14c-.008-.463.158-.91.462-1.247A1.664 1.664 0 0 1 3.395 1.3H7.13v5H4.831a1.144 1.144 0 0 0-.807.357 1.247 1.247 0 0 0-.342.843h4.213a.611.611 0 0 0 .394-.189.663.663 0 0 0 .18-.411V.6a.864.864 0 0 0-.251-.402A.808.808 0 0 0 7.799 0H3.587A2.762 2.762 0 0 0 2.48.19a2.856 2.856 0 0 0-.953.617 3 3 0 0 0-.653.952A3.111 3.111 0 0 0 .619 2.9v13.9c-.028.398.023.797.15 1.173.128.376.328.72.589 1.011.26.292.576.523.927.68.35.158.728.238 1.11.236H7.8a.46.46 0 0 0 .402-.106.497.497 0 0 0 .173-.394Z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' transform='translate(.619)' d='M0 0h19.148v20H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

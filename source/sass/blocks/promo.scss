@@ -5,9 +5,7 @@
   min-height: 420px;
 
   @media (min-width: 321px) and (max-width: 769px) {
-    max-width: 709px;
     min-height: 790px;
-    padding-left: 118px;
     padding-top: 40px;
   }
 
@@ -16,7 +14,6 @@
     text-align: left;
     color: #000000;
     margin: 0;
-    padding-left: 190px;
   }
 }
 
@@ -99,10 +96,10 @@
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--button-text-color);
   width: 100%;
   padding: 7px;
-  background-color: #68b738;
+  background-color: var(--button-color);
 
   @media (min-width: 321px) and (max-width: 769px) {
     display: flex;
