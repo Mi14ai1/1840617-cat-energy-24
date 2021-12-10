@@ -6,7 +6,7 @@
   color: #000000;
   margin: 0;
 
-  @media (min-width: 321px) {
+  @media (--middle-vp) {
     font-size: 20px;
     line-height: 30px;
   }

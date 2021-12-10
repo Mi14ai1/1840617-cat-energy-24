@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 
-@media (min-width: 769px) {
+@media (--wide-vp) {
   .contacts__text {
     position: absolute;
     max-width: 565px;
@@ -21,7 +21,7 @@
   color: var(--base-font-color);
   margin: 0;
 
-  @media (min-width: 321px) {
+  @media (--middle-vp) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -40,7 +40,7 @@
   margin: 0;
   padding-right: 10px;
 
-  @media (min-width: 321px) {
+  @media (--middle-vp) {
     font-size: 20px;
     line-height: 26px;
   }
@@ -49,7 +49,7 @@
 .contacts__map {
   min-height: 362px;
 
-  @media (min-width: 321px) {
+  @media (--middle-vp) {
     min-height: 400px;
   }
 }

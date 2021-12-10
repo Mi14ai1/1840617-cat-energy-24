@@ -22,7 +22,7 @@
   margin: 0;
   color: var(--base-font-color);
 
-  @media (min-width: 321px) {
+  @media (--middle-vp) {
     font-size: 16px;
     line-height: 24px;
   }
@@ -37,7 +37,7 @@
   list-style: none;
 }
 
-@media (min-width: 321px) {
+@media (--middle-vp) {
   .description__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -69,7 +69,7 @@
     background-position-x: right;
   }
 
-  @media (min-width: 769px) {
+  @media (--wide-vp) {
     .description__list {
       flex-direction: row;
       flex-wrap: wrap;

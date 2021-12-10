@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 0;
 
-  @media (min-width: 321px) {
+  @media (--wide-vp) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 61px;
@@ -22,7 +22,7 @@
   color: var(--button-text-color);
   border: none;
   padding: 10px;
-  background-color: var(--line-color);
+  background-color: var(--button-color);
   max-width: 558px;
 }
 
@@ -32,6 +32,7 @@
   width: 100%;
   min-height: 150px;
   padding: 10px 19px;
+  border: 1px solid var(--input-border-color);
 }
 
 .form-cat-program__comment::placeholder {

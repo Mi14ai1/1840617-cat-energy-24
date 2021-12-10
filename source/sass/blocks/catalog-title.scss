@@ -7,7 +7,13 @@
   text-align: center;
   margin: 0;
 
-  @media (min-width: 321px) {
+  @media (--middle-vp) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  @media (--wide-vp) {
     font-size: 60px;
     line-height: 60px;
     text-align: left;

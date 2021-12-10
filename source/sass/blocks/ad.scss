@@ -15,7 +15,7 @@
     padding-right: 124px;
   }
 
-  @media (min-width: 769px) {
+  @media (--wide-vp) {
     flex-direction: column;
     padding: 0 10px 43px;
   }
@@ -31,13 +31,13 @@
   width: 78px;
   height: 80px;
 
-  @media (min-width: 490px) {
+  @media (--middle-vp) {
     top: 50%;
     left: 0;
     transform: translate(100%, -50%);
   }
 
-  @media (min-width: 769px) {
+  @media (--wide-vp) {
     top: 0;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -52,11 +52,11 @@
   text-align: center;
   margin: 0;
 
-  @media (min-width: 490px) {
+  @media (--middle-vp) {
     text-align: start;
   }
 
-  @media (min-width: 769px) {
+  @media (--wide-vp) {
     text-align: center;
   }
 }

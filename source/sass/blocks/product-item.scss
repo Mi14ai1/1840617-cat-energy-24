@@ -6,7 +6,7 @@
   padding-top: 13px;
   border-top: 1px solid #cdcdcd;
 
-  @media (min-width: 769px) {
+  @media (--wide-vp) {
     grid-template-columns: repeat(4, 1fr);
     padding-top: 15px;
     padding-bottom: 17px;
@@ -26,7 +26,7 @@
   text-align: start;
   color: #222222;
 
-  @media (min-width: 769px) {
+  @media (--wide-vp) {
     grid-column: 1/2;
     margin: 0;
   }
@@ -39,7 +39,7 @@
   line-height: 14px;
   color: var(--base-font-color);
 
-  @media (min-width: 769px) {
+  @media (--wide-vp) {
     margin: 0;
   }
 }
@@ -60,7 +60,7 @@
   padding: 10px;
   background-color: var(--button-color);
 
-  @media (min-width: 769px) {
+  @media (--wide-vp) {
     grid-column: 4/5;
     margin: 0;
   }

@@ -4,7 +4,11 @@
   align-items: stretch;
   text-align: start;
 
-  @media (min-width: 321px) {
+  @media (--middle-vp) {
+    grid-column: 1/-1;
+  }
+
+  @media (--wide-vp) {
     grid-column: 1/-1;
   }
 }
@@ -34,7 +38,7 @@
     background-color: var(--line-color);
   }
 
-  @media (min-width: 321px) and (max-width: 769px) {
+  @media (--wide-vp) {
     white-space: nowrap;
 
     &::after {
@@ -56,7 +60,7 @@
   }
 
 
-  @media (min-width: 769px) {
+  @media (--wide-vp) {
     &::after {
       content: "";
       top: 50%;

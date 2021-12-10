@@ -1,17 +1,24 @@
 .htmlacademy-logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   border-top: 1px solid #d9d9d9;
 
-  @media (min-width: 321px) {
+  @media (--middle-vp) {
+    border: transparent;
+    width: 163px;
+  }
+
+  @media (--wide-vp) {
     border: transparent;
     width: 163px;
   }
 }
 
 .htmlacademy-logo__link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   text-decoration: none;
   color: var(--base-font-color);
 }

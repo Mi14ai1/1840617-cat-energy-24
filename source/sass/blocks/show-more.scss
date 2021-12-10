@@ -10,7 +10,7 @@
   padding: 78px 0 25px;
   border-top: 1px solid #ebebeb;
 
-  @media (min-width: 321px) {
+  @media (--middle-vp) {
     box-sizing: border-box;
     width: 100%;
     max-width: 324px;
@@ -20,7 +20,7 @@
     box-shadow: inset 0 0 0 1px #f2f2f2;
   }
 
-  @media (min-width: 769px) {
+  @media (--wide-vp) {
     max-width: 245px;
   }
 }
@@ -63,7 +63,7 @@
   width: 30px;
   height: 30px;
 
-  @media (min-width: 321px) {
+  @media (--middle-vp) {
     width: 60px;
     height: 60px;
   }

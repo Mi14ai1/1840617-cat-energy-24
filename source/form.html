@@ -14,7 +14,7 @@
         <h1 class="page__form-title">Подбор программы</h1>
         <p class="request-to-user">Заполните анкету, и&nbsp;мы&nbsp;подберем<br>программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" method="post" class="form-cat-program">
-          <fieldset class="inputs-group inputs-group-cat-parametrs">
+          <fieldset class="inputs-group inputs-group--type_cat">
             <legend class="inputs-group__title-hidden visually-hidden">Имя, возраст, вес</legend>
             <label class="inputs-group__input-label" for="catname">
               Имя:*
@@ -29,7 +29,7 @@
               <input class="inputs-group__input" id="age" name="age" type="number" required value="7" placeholder="Введите значение">
             </label>
           </fieldset>
-          <fieldset class="inputs-group inputs-group-type-program">
+          <fieldset class="inputs-group inputs-group--type_program">
             <legend class="inputs-group__title-hidden visually-hidden">Тип программы</legend>
             <input class="inputs-group__input-radio visually-hidden" id="slimming" name="program" value="slimming"  type="radio" checked>
             <label class="inputs-group__input-label" for="slimming">похудение</label>
@@ -38,7 +38,7 @@
             <input class="inputs-group__input-radio visually-hidden" id="not-decide" name="program"  value="not-decide" type="radio">
             <label class="inputs-group__input-label" for="not-decide">Не знаю (Нужен ваш совет)</label>
           </fieldset>
-          <fieldset class="inputs-group inputs-group-user-contacts">
+          <fieldset class="inputs-group inputs-group--type_contacts">
             <legend class="inputs-group__title">Контактные данные (владельца кота)</legend>
             <label class="inputs-group__input-label inputs-group__input-label--email" for="email">
               E-mail:*
@@ -50,7 +50,7 @@
             </label>
           </fieldset>
           <label class="comment-label"><span class="comment-label__title">Комментарий</span><textarea class="form-cat-program__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea></label>
-          <fieldset class="inputs-group inputs-group-additionals">
+          <fieldset class="inputs-group inputs-group--type_additionals">
             <legend class="inputs-group__title">Дополнения</legend>
             <input class="inputs-group__input-checkbox visually-hidden" id="sugar-substitiute" name="additionals" value="sugar-substitiute" type="checkbox" checked><label class="inputs-group__input-label" for="sugar-substitiute">сахарозаменитель</label>
             <input class="inputs-group__input-checkbox visually-hidden" id="water" name="additionals" value="water" type="checkbox"><label class="inputs-group__input-label" for="water">питьевая вода</label>
