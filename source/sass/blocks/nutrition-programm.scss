@@ -1,6 +1,12 @@
 .nutrition-programm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+
   @media (min-width: 769px) {
     display: flex;
+    flex-direction: row;
     gap: 80px;
   }
 }
@@ -9,7 +15,6 @@
   box-sizing: border-box;
   background-color: #f2f2f2;
   padding: 22px;
-  margin: 20px;
 
   @media (min-width: 769px) {
     max-width: 570px;

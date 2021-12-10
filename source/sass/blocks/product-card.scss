@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 19px 20px 0;
+  border-top: 1px solid #ebebeb;
 }
 
 @media (min-width: 321px) {
@@ -90,8 +91,8 @@
   padding-right: 60px;
 }
 
-.product-card + .product-card {
-  border-top: 1px solid #ebebeb;
+.product-card:first-child {
+  border-top: transparent;
 }
 
 .product-card__image {

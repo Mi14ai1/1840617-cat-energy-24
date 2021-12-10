@@ -26,3 +26,19 @@
     width: 1220px;
   }
 }
+
+.page__form-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: 321px) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+}

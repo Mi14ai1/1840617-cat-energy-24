@@ -10,7 +10,7 @@
 
       {% include "header.njk" %}
 
-      <main class="page-main">
+      <main class="main">
         <h1 class="page__form-title">Подбор программы</h1>
         <p class="request-to-user">Заполните анкету, и&nbsp;мы&nbsp;подберем<br>программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" method="post" class="form-cat-program">
@@ -40,11 +40,11 @@
           </fieldset>
           <fieldset class="inputs-group inputs-group-user-contacts">
             <legend class="inputs-group__title">Контактные данные (владельца кота)</legend>
-            <label class="inputs-group__input-label" for="email">
+            <label class="inputs-group__input-label inputs-group__input-label--email" for="email">
               E-mail:*
               <input class="inputs-group__input" id="email" name="email" type="email" required value="kuklachev@gmail.com" placeholder="Введите ваш E-mail">
             </label>
-            <label class="inputs-group__input-label" for="phone">
+            <label class="inputs-group__input-label inputs-group__input-label--phone" for="phone">
               Телефон:*
               <input class="inputs-group__input" id="phone" name="phone" type="tel" required value="8 (960) 900-60-90" placeholder="Введите номер вашего телефона">
             </label>
