@@ -2,24 +2,21 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 320px;
-  padding-left: 19px;
-  padding-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
   padding-bottom: 22px;
   padding-top: 39px;
   margin: 0 auto;
   background-color: #f2f2f2;
 
-  @media (min-width: 321px)and(max-width: 769px) {
+  @media (min-width: 321px) and (max-width: 769px) {
     flex-wrap: nowrap;
-    padding: 58px 30px 55px;
-    max-width: 768px;
+    padding: 58px 0 55px;
   }
 
   @media (min-width: 769px) {
     flex-wrap: nowrap;
-    padding: 57px 110px 58px;
-    max-width: 1440px;
+    padding: 57px 0 58px;
   }
 }
 

@@ -6,6 +6,7 @@
 
 @media (min-width: 769px) {
   .inputs-group-user-contacts {
+    grid-column: 1/-1;
     flex-direction: row;
     justify-content: space-between;
     gap: 78px;

@@ -4,20 +4,12 @@
   flex-wrap: wrap;
   gap: 20px;
   box-sizing: border-box;
-  max-width: 280px;
   margin: 0;
   padding: 0;
   border: none;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: 321px) {
-    grid-column: 1/-1;
     width: 100%;
-    max-width: 768px;
-  }
-
-  @media (min-width: 769px) {
-    width: 100%;
-    max-width: 1440px;
   }
 }

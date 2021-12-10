@@ -1,11 +1,9 @@
 .additional-products {
   margin: 0;
   list-style: none;
-  padding: 0 20px;
-}
+  padding: 0;
 
-@media (min-width: 769px) {
-  .additional-products {
+  @media (min-width: 769px) {
     flex-grow: 1;
   }
 }
