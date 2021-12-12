@@ -1,3 +1,5 @@
-@custom-media --wide-vp (min-width: 1280px);
-@custom-media --middle-vp (768px <= width < 1279.9px);
-@custom-media --narrow-vp (320px <= width < 767.9px);
+@custom-media --wide-vp (width >= 1280px);
+@custom-media --middle-vp (768px <= width <= 1279.9px);
+@custom-media --narrow-vp (width <= 767.9px);
+@custom-media --not-narrow-vp (width >= 767.9px);
+@custom-media --not-wide-vp (width <= 1280px);

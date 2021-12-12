@@ -21,7 +21,7 @@
   color: var(--base-font-color);
   margin: 0;
 
-  @media (--middle-vp) {
+  @media (--not-narrow-vp) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -40,7 +40,7 @@
   margin: 0;
   padding-right: 10px;
 
-  @media (--middle-vp) {
+  @media (--not-narrow-vp) {
     font-size: 20px;
     line-height: 26px;
   }

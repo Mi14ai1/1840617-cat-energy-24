@@ -3,18 +3,15 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  flex-grow: 1;
+  gap: 22px;
   align-items: center;
   width: 100%;
   border-top: 1px solid #d9d9d9;
 
-  @media (--middle-vp) {
+  @media (--not-narrow-vp) {
     border: transparent;
-    width: 163px;
-  }
-
-  @media (--wide-vp) {
-    border: transparent;
-    width: 163px;
+    max-width: 163px;
   }
 }
 

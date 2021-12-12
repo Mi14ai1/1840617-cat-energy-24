@@ -8,15 +8,18 @@
   }
 }
 
-.example__spending {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #000000;
-  text-transform: uppercase;
+.example__facts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
   @media (--middle-vp) {
-    font-size: 20px;
+    gap: 54px;
+  }
+
+  @media (--wide-vp) {
+    gap: 70px;
+    max-width: 436px;
   }
 }
 
@@ -26,6 +29,7 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  padding-bottom: 20px;
   margin: 0;
 }
 
@@ -38,9 +42,54 @@
   margin: 0;
 }
 
-.example__facts {
+.example__facts-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 34px;
+  margin: 0;
+
+  @media (--middle-vp) {
+    display: flex;
+    column-gap: 42px;
+    row-gap: 9px;
+  }
+
   @media (--wide-vp) {
-    max-width: 436px;
+    max-width: 366px;
+  }
+}
+
+.example__item-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.example__item-container--mass {
+  @media (--wide-vp) {
+    justify-self: start;
+  }
+}
+
+.example__item-container--time {
+  @media (--wide-vp) {
+    justify-self: end;
+  }
+}
+
+.example__item-container--spending {
+  grid-column: 1/-1;
+
+  @media (--middle-vp) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  @media (--wide-vp) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -50,34 +99,77 @@
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
 
-  @media (--middle-vp) {
+  @media (--not-narrow-vp) {
     font-size: 30px;
     line-height: 37px;
   }
 }
 
 .example__facts-item-explanation {
+  position: relative;
+  box-sizing: border-box;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: var(--base-font-color);
   text-transform: lowercase;
+  white-space: pre-wrap;
+  text-align: center;
+  margin: 0;
 
-  @media (--middle-vp) {
+  @media (--not-narrow-vp) {
     font-size: 14px;
     line-height: 14px;
   }
 }
 
-.example__facts-item-fact--spending {
+.example__facts-item-explanation--text {
+  position: absolute;
+  display: inline-block;
+  width: 80px;
+  padding: 3px;
+  background-color: #eaeaea;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.example__facts-item-fact--time,
+.example__facts-item-fact--mass {
+  position: absolute;
+  top: 0;
+  transform: translateY(50%);
+}
+
+.example__facts-item-explanation--mass::before,
+.example__facts-item-explanation--time::before {
+  content: "";
+  display: block;
+  width: 124px;
+  height: 56px;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px var(--fact-border-color);
+
+  @media (--not-narrow-vp) {
+    width: 162px;
+    height: 77px;
+  }
+}
+
+.example__facts-item-fact--spending,
+.example__facts-item-explanation--spending {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
 
-  @media (--middle-vp) {
+  @media (--not-narrow-vp) {
     font-size: 20px;
+  }
+
+  @media (--middle-vp) {
+    text-align: end;
   }
 }

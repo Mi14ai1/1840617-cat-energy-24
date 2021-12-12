@@ -1,3 +1,12 @@
+.description {
+  padding-bottom: 49px;
+
+  @media (--middle-vp) {
+    padding-bottom: 60px;
+    border-bottom: 1px  solid var(--line-after-description-color);
+  }
+}
+
 .description__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -5,14 +14,69 @@
   font-weight: 400;
   color: #000000;
   text-align: start;
-  margin: 0;
+  margin: 0 0 40px 0;
+
+  @media (--not-narrow-vp) {
+    margin-bottom: 61px;
+  }
 }
 
-@media (min-width: 321px) {
+@media (--not-narrow-vp) {
   .description__title {
     font-size: 60px;
     line-height: 60px;
   }
+}
+
+.description__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media (--middle-vp) {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    max-width: 197px;
+  }
+
+  @media (--wide-vp) {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    max-width: 246px;
+  }
+}
+
+.description__item::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (--not-narrow-vp) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.description__item--feed::before {
+  background-image: url("../../icons/sprite.svg#nutrients");
+}
+
+.description__item--powder::before {
+  background-image: url("../../icons/sprite.svg#powder");
+}
+
+.description__item--eating::before {
+  background-image: url("../../icons/sprite.svg#eating");
+}
+
+.description__item--timer::before {
+  background-image: url("../../icons/sprite.svg#timer");
 }
 
 .description__text {
@@ -35,16 +99,22 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
-@media (--middle-vp) {
-  .description__list {
+  @media (--middle-vp) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 137px;
+    row-gap: 90px;
+  }
+
+  @media (--wide-vp) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 37px;
   }
+}
 
+@media (--not-narrow-vp) {
   .description__item--feed {
     background: url("../../img/examples/background-one.svg") no-repeat;
     background-size: contain;
@@ -67,19 +137,5 @@
     background: url("../../img/examples/background-four.svg") no-repeat;
     background-size: contain;
     background-position-x: right;
-  }
-
-  @media (--wide-vp) {
-    .description__list {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      row-gap: 37px;
-    }
-  }
-
-  .description__item {
-    box-sizing: border-box;
-    max-width: 230px;
   }
 }

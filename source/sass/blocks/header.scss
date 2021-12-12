@@ -1,4 +1,8 @@
 .header {
   position: relative;
   box-sizing: border-box;
+
+  @media (--narrow-vp) {
+    background-color: var(--header-background-color-mobile);
+  }
 }

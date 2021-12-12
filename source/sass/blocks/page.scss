@@ -8,24 +8,23 @@
 }
 
 .page__centerer {
+  position: relative;
   --content-indent: calc(20px + (10vw - 32px) / 4.48);
 
   margin-inline: var(--content-indent) calc(var(--content-indent) - var(--scrollbar));
 
   @media (--narrow-vp) {
     --content-indent: calc(20px + (10vw - 32px) / 4.48);
-    margin: 0 auto;
   }
 
   @media (--middle-vp) {
     --content-indent: 30px;
-    margin: 0 auto;
   }
 
   @media (--wide-vp) {
+    margin: 0 auto;
     --content-indent: auto;
     max-width: 1220px;
-    margin: 0 auto;
   }
 }
 
