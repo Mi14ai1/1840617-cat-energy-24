@@ -1,12 +1,10 @@
 .product-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 19px 20px 0;
+  padding: 19px 0;
   border-top: 1px solid #ebebeb;
-}
 
-@media (--middle-vp) {
-  .product-card {
+  @media (--middle-vp) {
     position: relative;
     grid-template-columns: 1fr;
     box-sizing: border-box;
@@ -20,34 +18,7 @@
     background-color: #f2f2f2;
   }
 
-  .product-card__image {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    width: 168px;
-    height: 200px;
-  }
-
-
-  .product-card__item-value,
-  .product-card__item-name {
-    font-size: 16px;
-    padding: 9px 0;
-    border-bottom: 1px solid #cdcdcd;
-  }
-
-  .product-card__title {
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #222222;
-    padding: 0 62px;
-  }
-}
-
-@media (--wide-vp) {
-  .product-card {
+  @media (--wide-vp) {
     position: relative;
     grid-template-columns: 1fr;
     box-sizing: border-box;
@@ -60,30 +31,20 @@
     border: none;
     background-color: #f2f2f2;
   }
+}
 
-  .product-card__image {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    width: 168px;
-    height: 200px;
-  }
-
-
-  .product-card__item-value,
-  .product-card__item-name {
+.product-card__item-value,
+.product-card__item-name {
+  @media (--middle-vp) {
     font-size: 16px;
     padding: 9px 0;
     border-bottom: 1px solid #cdcdcd;
   }
 
-  .product-card__title {
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #222222;
-    padding: 0 62px;
+  @media (--wide-vp) {
+    font-size: 16px;
+    padding: 9px 0;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
@@ -123,7 +84,26 @@
   text-align: left;
   text-transform: uppercase;
   color: #222222;
-  padding-right: 60px;
+
+  @media (--narrow-vp) {
+    padding-right: 60px;
+  }
+
+  @media (--middle-vp) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222222;
+    padding: 0 60px;
+  }
+
+  @media (--wide-vp) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222222;
+    padding: 0 60px;
+  }
 }
 
 .product-card:first-child {
@@ -135,4 +115,22 @@
   width: 140px;
   height: 100%;
   object-fit: contain;
+
+  @media (--middle-vp) {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (--wide-vp) {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 168px;
+    height: 200px;
+  }
 }

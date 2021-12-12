@@ -22,9 +22,11 @@
   }
 
   @media (--wide-vp) {
-    margin: 0 auto;
+    box-sizing: border-box;
     --content-indent: auto;
-    max-width: 1220px;
+    padding: 0 110px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 

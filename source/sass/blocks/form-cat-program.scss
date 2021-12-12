@@ -1,7 +1,9 @@
 .form-cat-program {
   display: flex;
   flex-direction: column;
+  gap: 26px;
   padding: 0;
+  padding-top: 39px;
 
   @media (--wide-vp) {
     display: grid;

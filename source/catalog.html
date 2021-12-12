@@ -7,11 +7,9 @@
 
 <body class="page__body">
 
-  <div class="page__centerer">
-
   {% include "./templates/header.twig" %}
 
-  <main class="main">
+  <main class="main page__centerer">
     <h1 class="catalog-title">Каталог продукции</h1>
     <ul class="products-list">
       <li class="product-card">
@@ -143,19 +141,19 @@
         <p class="ad__text">Закажите все<br>и&nbsp;получите чехол для<br>кота в&nbsp;подарок!</p>
       </div>
     </section>
-    <section class="contacts">
+  </main>
+  <section class="contacts">
+    <div class="page__centerer">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__text">
         <p class="contacts__lead-text">приглашаем<br>к&nbsp;сотрудничеству<br>дилеров!</p>
         <p class="contacts__adress">ул. Большая<br>Конюшенная, д. 19/8 <span class="contacts__adress-city">Санкт-Петербург</span></p>
       </div>
       <div class="contacts__map"></div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   {% include "./templates/footer.twig" %}
-
-  </div>
 
 </body>
 

@@ -29,21 +29,23 @@
 }
 
 .description__item {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 20px;
 
-  @media (--middle-vp) {
+  @media (--not-narrow-vp) {
     flex-direction: column;
     align-items: start;
-    justify-content: start;
+    justify-content: center;
+    min-height: 280px;
+  }
+
+  @media (--middle-vp) {
     max-width: 197px;
   }
 
   @media (--wide-vp) {
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
     max-width: 246px;
   }
 }
@@ -99,6 +101,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  counter-reset: section;
 
   @media (--middle-vp) {
     flex-direction: row;
@@ -115,27 +118,17 @@
 }
 
 @media (--not-narrow-vp) {
-  .description__item--feed {
-    background: url("../../img/examples/background-one.svg") no-repeat;
-    background-size: contain;
-    background-position-x: right;
-  }
-
-  .description__item--powder {
-    background: url("../../img/examples/background-two.svg") no-repeat;
-    background-size: contain;
-    background-position-x: right;
-  }
-
-  .description__item--eating {
-    background: url("../../img/examples/background-three.svg") no-repeat;
-    background-size: contain;
-    background-position-x: right;
-  }
-
-  .description__item--timer {
-    background: url("../../img/examples/background-four.svg") no-repeat;
-    background-size: contain;
-    background-position-x: right;
+  .description__item::after {
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    font-weight: 400;
+    color: var(--description-numders-color);
   }
 }

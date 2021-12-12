@@ -1,23 +1,26 @@
-<header class="header">
-  <nav class="navigation">
-    <div class="navigation__logo-container">
-      <a href="index.html" class="navigation__logo-link" {% if permalink == "index.html" %}aria-current="page"{% endif %}></a>
-    </div>
-    <button class="navigation__menu-button" type="button">
-      <span class="visually-hidden">Кнопка вызова меню</span>
-    </button>
-    <ul class="navigation__list">
-      {% for page in pages %}
-        <li class="navigation__item">
-          <a
-            class="navigation__link"
-            href="{{ page.path }}"
-            {% if permalink == page.path %}
-              aria-current="page"
-            {% endif %}
-          >{{ page.name }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
-</header>
+<div class="page__centerer">
+  <header class="header">
+    <nav class="navigation">
+      <div class="navigation__logo-container">
+        <a href="index.html" class="navigation__logo-link" {% if permalink == "index.html" %}aria-current="page"{% endif %}></a>
+      </div>
+      <button class="navigation__menu-button" type="button">
+        <span class="visually-hidden">Кнопка вызова меню</span>
+      </button>
+      <ul class="navigation__list">
+        {% for page in pages %}
+          <li class="navigation__item">
+            <a
+              class="navigation__link"
+              href="{{ page.path }}"
+              {% if permalink == page.path %}
+                aria-current="page"
+              {% endif %}
+            >{{ page.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+</div>
+

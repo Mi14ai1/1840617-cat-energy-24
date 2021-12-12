@@ -1,17 +1,16 @@
 .additional {
   --line-color: #68b738;
-}
 
-.additional__title {
-  display: flex;
-  align-items: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  text-align: left;
-  white-space: nowrap;
-  margin: 0;
+  @media (--narrow-vp) {
+    border-top: 1px solid #ebebeb;
+  }
+
+  @media (--wide-vp) {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 79px;
+    align-items: center;
+  }
 }
 
 .additional__products-list {
@@ -26,69 +25,62 @@
   }
 }
 
+.additional__title {
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  white-space: nowrap;
+  margin: 0;
 
-@media (--narrow-vp) {
-  .additional {
-    border-top: 1px solid #ebebeb;
-  }
-}
-
-@media (--wide-vp) {
-  .additional {
-    display: grid;
-    grid-template-columns: 1fr 245px;
-    align-items: center;
-  }
-
-  .additional__title {
-    grid-column: 1/-1;
-  }
-
-  .additional__title::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: var(--line-color);
-    margin-left: 35px;
-  }
-
-  .additional__title::before {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 2px;
-    background-color: var(--line-color);
-    margin-right: 40px;
-  }
-}
-
-
-@media (--middle-vp) {
-  .additional__title {
+  @media (--middle-vp) {
     position: relative;
     margin-left: 0;
     padding-left: 67px;
   }
 
-  .additional__title::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: var(--line-color);
-    margin-left: 36px;
+  @media (--wide-vp) {
+    grid-column: 1/-1;
+  }
+}
+
+.additional__title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--line-color);
+  margin-left: 22px;
+
+  @media (--middle-vp) {
+    margin-left: 35px;
   }
 
-  .additional__title::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: block;
-    width: 30px;
+  @media (--wide-vp) {
+    margin-left: 35px;
+  }
+}
+
+.additional__title::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: var(--line-color);
+  margin-right: 0;
+
+  @media (--middle-vp) {
     height: 2px;
-    background-color: var(--line-color);
+    width: 30px;
     margin-right: 37px;
+  }
+
+  @media (--wide-vp) {
+    height: 2px;
+    width: 70px;
+    margin-right: 40px;
   }
 }
