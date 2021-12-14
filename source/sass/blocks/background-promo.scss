@@ -1,0 +1,25 @@
+.background-promo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 302px;
+  width: 100%;
+  background-image: url("../../img/promo-background-mini.png");
+  background-size: cover;
+  z-index: -1;
+
+  @media (--middle-vp) {
+    display: none;
+  }
+
+  @media (--wide-vp) {
+    right: -110px;
+    top: -141px;
+    background-image: url("../../img/promo-background-max.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 50%;
+    width: 720px;
+    height: 694px;
+  }
+}

@@ -7,18 +7,16 @@
   list-style: none;
 
   @media (--not-narrow-vp) {
-    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    column-gap: 40px;
+    padding-top: 165px;
   }
 
   @media (--middle-vp) {
     column-gap: 60px;
-    row-gap: 141px;
-    padding: 163px 0 0;
   }
 
   @media (--wide-vp) {
-    column-gap: 60px;
-    row-gap: 141px;
-    padding: 165px 0 0;
+    column-gap: 80px;
   }
 }
