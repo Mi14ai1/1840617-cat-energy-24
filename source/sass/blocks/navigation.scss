@@ -23,6 +23,7 @@
   position: absolute;
   top: 100%;
   left: 0;
+  color: var(--navigation-text-color);
   width: 100%;
   flex-direction: column;
   display: none;
@@ -155,6 +156,7 @@
   background-color: #ffffff;
   border-top: 1px solid;
   border-color: #e6e6e6;
+  color: inherit;
 
   @media (--wide-vp) {
     border-color: transparent;
@@ -182,7 +184,7 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  color: var(--navigation-text-color);
+  color: inherit;
   padding-top: 22px;
   padding-bottom: 24px;
 

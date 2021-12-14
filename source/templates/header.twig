@@ -7,7 +7,7 @@
       <button class="navigation__menu-button" type="button">
         <span class="visually-hidden">Кнопка вызова меню</span>
       </button>
-      <ul class="navigation__list">
+      <ul {% if permalink == "index.html" %}class="navigation__list alternative-text-color"{% else %}class="navigation__list"{% endif %}>
         {% for page in pages %}
           <li class="navigation__item">
             <a
