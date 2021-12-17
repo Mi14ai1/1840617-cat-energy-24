@@ -9,7 +9,6 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 236px;
-  padding-top: 39px;
 
   @media (--not-narrow-vp) {
     flex-direction: row;
@@ -25,7 +24,7 @@
 
 .footer__logo-container {
   align-self: center;
-  flex-grow: 1;
+  padding: 39px 0 32px;
 
   @media (--not-narrow-vp) {
     flex-grow: 0;

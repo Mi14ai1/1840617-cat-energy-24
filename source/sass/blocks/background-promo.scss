@@ -18,9 +18,9 @@
   }
 
   @media (--wide-vp) {
-    position: fixed;
+    position: absolute;
     left: 50%;
-    top: 0;
+    top: -79px;
     background-image: url("../../img/promo-background-max.png");
     background-repeat: no-repeat;
     background-size: contain;

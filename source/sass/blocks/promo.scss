@@ -6,7 +6,7 @@
   text-align: center;
   padding-top: 27px;
 
-  min-height: 420px;
+  min-height: 480px;
 
   @media (--middle-vp) {
     min-height: 790px;
@@ -28,6 +28,8 @@
   flex-direction: column;
   gap: 25px;
   padding: 0 17px;
+  margin-bottom: 29px;
+  z-index: 1;
 
   @media (--middle-vp) {
     gap: 41px;
