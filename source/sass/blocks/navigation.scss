@@ -72,7 +72,7 @@
     color: var(--navigation-text-color);
     width: 100vw;
     flex-direction: column;
-    z-index: 1;
+    z-index: 2;
   }
 
   @media (--not-narrow-vp) {
