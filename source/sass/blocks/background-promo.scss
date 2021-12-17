@@ -1,7 +1,12 @@
+.background-promo {
+  position: relative;
+}
+
 .background-promo::after {
   content: "";
   display: block;
   position: absolute;
+  top: 0;
   height: 302px;
   width: 100%;
   background-image: url("../../img/promo-background-mini.png");
@@ -13,8 +18,9 @@
   }
 
   @media (--wide-vp) {
-    right: -110px;
-    top: -141px;
+    position: fixed;
+    left: 50%;
+    top: 0;
     background-image: url("../../img/promo-background-max.png");
     background-repeat: no-repeat;
     background-size: contain;

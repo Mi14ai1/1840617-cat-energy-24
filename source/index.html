@@ -15,8 +15,8 @@
     <h1 class="page__title-hidden visually-hidden">
       Cat energy
     </h1>
-    <div class="page__centerer">
-      <section class="promo background-promo">
+    <section class="promo background-promo">
+      <div class="promo__structure page__centerer">
         <div class="promo__text-container">
           <h2 class="promo__title">Функциональное<br>питание&nbsp;для&nbsp;котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
@@ -25,7 +25,9 @@
           <img src="img/promo-chicken.png" alt="Корм для котов со вкусом курицы" class="promo__image">
         </div>
         <a href="#" class="promo__button button">Подобрать программу</a>
-      </section>
+      </div>
+    </section>
+    <div class="page__centerer">
       <section class="nutrition-programm">
         <div class="nutrition-programm__card nutrition-programm__card--slim">
           <h2 class="nutrition-programm__title">Похудение</h2>
@@ -96,6 +98,21 @@
     {% include "./templates/contacts.twig" %}
   </main>
   {% include "./templates/footer.twig" %}
+  <script>
+    var nav = document.querySelector('.navigation');
+    var navToggle = document.querySelector('.navigation__button');
+    nav.classList.remove('navigation--nojs');
+
+    nav.addEventListener('click', function() {
+    if (nav.classList.contains('navigation--closed')) {
+      nav.classList.remove('navigation--closed');
+      nav.classList.add('navigation--opened');
+    } else{
+      nav.classList.add('navigation--closed');
+      nav.classList.remove('navigation--opened');
+    }
+  });
+  </script>
 </body>
 
 </html>
