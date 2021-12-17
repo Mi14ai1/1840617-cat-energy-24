@@ -154,6 +154,14 @@
   padding-top: 22px;
   padding-bottom: 24px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (--middle-vp) {
     font-size: 18px;
     line-height: 24px;
@@ -165,12 +173,4 @@
     line-height: 30px;
     font-weight: 400;
   }
-}
-
-.navigation__link:hover {
-  opacity: 0.6;
-}
-
-.navigation__link:active {
-  opacity: 0.3;
 }

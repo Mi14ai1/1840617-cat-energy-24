@@ -19,13 +19,13 @@
 
   @media (--wide-vp) {
     position: absolute;
-    left: 50%;
+    right: 0;
     top: -79px;
     background-image: url("../../img/promo-background-max.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100% 50%;
-    width: 720px;
+    max-width: 720px;
     height: 694px;
   }
 }
