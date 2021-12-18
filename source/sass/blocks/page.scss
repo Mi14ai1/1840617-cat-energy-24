@@ -11,10 +11,10 @@
   position: relative;
   --content-indent: calc(20px + (10vw - 32px) / 4.48);
 
-  margin-inline: var(--content-indent);
+  margin-inline: var(--content-indent) calc(var(--content-indent) - var(--scrollbar));
 
   @media (--narrow-vp) {
-    --content-indent: 20px;
+    --content-indent: calc(20px + (10vw - 32px) / 4.48);
   }
 
   @media (--middle-vp) {
