@@ -13,14 +13,6 @@
 
   margin-inline: var(--content-indent) calc(var(--content-indent) - var(--scrollbar));
 
-  @media (--narrow-vp) {
-    --content-indent: calc(20px + (10vw - 32px) / 4.48);
-  }
-
-  @media (--middle-vp) {
-    --content-indent: 30px;
-  }
-
   @media (--wide-vp) {
     box-sizing: border-box;
     --content-indent: auto;
@@ -36,18 +28,31 @@
   line-height: 36px;
   font-weight: 400;
   color: #000000;
-  text-align: center;
-  margin: 0;
+  text-align: start;
+  margin: 0 0 37px;
 
   @media (--middle-vp) {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    margin-bottom: 54px;
   }
 
   @media (--wide-vp) {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    margin-bottom: 56px;
+  }
+}
+
+.page__form-title-container {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 27px  0 0;
+
+  @media (--narrow-vp) {
+    border-top: 1px solid #d9d9d9;
   }
 }

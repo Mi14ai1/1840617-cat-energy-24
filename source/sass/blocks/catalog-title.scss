@@ -1,4 +1,20 @@
 .catalog-title {
+  padding: 27px 30px 35px;
+
+  @media (--narrow-vp) {
+    border-top: 1px solid var(--catalog-title-border-color);
+  }
+
+  @media (--middle-vp) {
+    padding: 70px 30px 157px;
+  }
+
+  @media (--wide-vp) {
+    padding: 74px 110px 157px;
+  }
+}
+
+.catalog-title__text {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 36px;

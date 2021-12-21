@@ -117,7 +117,7 @@
 
 .example__item-container--time {
   @media (--wide-vp) {
-    justify-self: end;
+    justify-self: flex-end;
   }
 }
 

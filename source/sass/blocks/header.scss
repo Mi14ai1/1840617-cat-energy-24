@@ -13,6 +13,14 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (--middle-vp) {
+    padding: 27px 0 0;
+  }
+
+  @media (--wide-vp) {
+    padding: 53px 0 0;
+  }
 }
 
 .header__logo-container {
@@ -70,7 +78,7 @@
     background-repeat: no-repeat;
     background-image: url("../../img/cat-logo-tablet.svg");
     width: 174px;
-    height: 52px;
+    height: 50px;
   }
 
   @media (--wide-vp) {
@@ -87,7 +95,7 @@
   .header__logo-link::after {
     content: "";
     display: block;
-    justify-self: end;
+    justify-self: flex-end;
     width: 101px;
     height: 18px;
     transform: translateX(50%);
