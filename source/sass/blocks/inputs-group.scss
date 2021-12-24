@@ -48,16 +48,13 @@
 .inputs-group.inputs-group--type_contacts {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
 
   @media (--middle-vp) {
-    padding-top: 79px;
     border: none;
   }
 
   @media (--wide-vp) {
     grid-column: 1/-1;
-    padding-top: 73px;
   }
 }
 
@@ -83,7 +80,7 @@
 
 .inputs-group.inputs-group--type_additionals {
   gap: 32px;
-  padding-top: 26px;
+  padding-top: 56px;
 
   @media (--not-narrow-vp) {
     grid-column: 1/-1;
@@ -92,11 +89,11 @@
   }
 
   @media (--middle-vp) {
-    padding-top: 69px;
+    padding-top: 89px;
   }
 
   @media (--wide-vp) {
-    padding-top: 71px;
+    padding-top: 93px;
   }
 }
 
@@ -197,15 +194,18 @@
   text-align: start;
   margin: 0;
   gap: 34px;
+  padding-bottom: 26px;
   padding-top: 28px;
 
   @media (--middle-vp) {
     gap: 70px;
+    padding-bottom: 69px;
     padding-top: 69px;
   }
 
   @media (--wide-vp) {
     gap: 71px;
+    padding-bottom: 71px;
     padding-top: 73px;
     grid-column: 1/-1;
   }

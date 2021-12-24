@@ -26,11 +26,17 @@
 .form-cat-program__cat-info {
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
+
+  @media (--middle-vp) {
+    padding-bottom: 79px;
+  }
 
   @media (--wide-vp) {
     grid-column: 1/-1;
     flex-direction: row;
     gap: 80px;
+    padding-top: 73px;
   }
 }
 
