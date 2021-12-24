@@ -10,68 +10,67 @@
   {% include "./templates/header.twig" %}
 
     <main class="main">
-      <div class="page__form-title-container">
-        <div class="page__centerer">
-          <h1 class="page__form-title">Подбор программы</h1>
-          <p class="request-to-user">Заполните анкету, и&nbsp;мы&nbsp;подберем<br>программу питания для вашего кота</p>
-        </div>
+      <div class="page__centerer page__form-title-container">
+        <h1 class="page__form-title">Подбор программы</h1>
+        <p class="request-to-user">Заполните анкету, и&nbsp;мы&nbsp;подберем<br>программу питания для вашего кота</p>
       </div>
-        <form action="https://echo.htmlacademy.ru" method="post" class="form-cat-program">
-          <div class="form-cat-program__border">
-            <div class="page__centerer">
-              <fieldset class="inputs-group inputs-group--type_cat">
-                <legend class="form-cat-program__group-title-hidden visually-hidden">Имя, возраст, вес</legend>
-                <label class="inputs-group__input-label" for="catname">
-                  Имя:*
-                  <input class="inputs-group__input" id="catname" name="catname" type="text" required value="Барсик" placeholder="Введите значение">
-                </label>
-                <label class="inputs-group__input-label" for="weight">
-                  Вес (кг):*
-                  <input class="inputs-group__input" id="weight" name="weight" type="number" required value="7" placeholder="Введите значение">
-                </label>
-                <label class="inputs-group__input-label" for="age">
-                  Возраст (лет):*
-                  <input class="inputs-group__input" id="age" name="age" type="number" required value="7" placeholder="Введите значение">
-                </label>
-              </fieldset>
-            </div>
+        <form action="https://echo.htmlacademy.ru" method="post" class="form-cat-program page__centerer">
+          <div class="form-cat-program__cat-info">
+            <fieldset class="inputs-group inputs-group--type_cat form-cat-program__border">
+              <legend class="inputs-group__group-title-hidden visually-hidden">Имя, возраст, вес</legend>
+              <label class="inputs-group__input-label" for="catname">
+                Имя:*
+                <input class="inputs-group__input" id="catname" name="catname" type="text" required value="Барсик" placeholder="Введите значение">
+              </label>
+              <label class="inputs-group__input-label" for="weight">
+                Вес (кг):*
+                <input class="inputs-group__input" id="weight" name="weight" type="number" required value="7" placeholder="Введите значение">
+              </label>
+              <label class="inputs-group__input-label" for="age">
+                Возраст (лет):*
+                <input class="inputs-group__input" id="age" name="age" type="number" required value="7" placeholder="Введите значение">
+              </label>
+            </fieldset>
+            <fieldset class="inputs-group inputs-group--type_program form-cat-program__border">
+              <legend class="inputs-group__group-title-hidden visually-hidden">Тип программы</legend>
+              <input class="inputs-group__input-radio visually-hidden" id="slimming" name="program" value="slimming"  type="radio" checked>
+              <label class="inputs-group__input-label" for="slimming">похудение</label>
+              <input class="inputs-group__input-radio visually-hidden" id="weight-gain" name="program" value="weight-gain" type="radio">
+              <label class="inputs-group__input-label" for="weight-gain">Набор массы</label>
+              <input class="inputs-group__input-radio visually-hidden" id="not-decide" name="program"  value="not-decide" type="radio">
+              <label class="inputs-group__input-label" for="not-decide">Не знаю (Нужен ваш совет)</label>
+            </fieldset>
           </div>
-          <div class="form-cat-program__border">
-            <div class="page__centerer">
-              <fieldset class="inputs-group inputs-group--type_program">
-                <legend class="form-cat-program__group-title-hidden visually-hidden">Тип программы</legend>
-                <input class="inputs-group__input-radio visually-hidden" id="slimming" name="program" value="slimming"  type="radio" checked>
-                <label class="inputs-group__input-label" for="slimming">похудение</label>
-                <input class="inputs-group__input-radio visually-hidden" id="weight-gain" name="program" value="weight-gain" type="radio">
-                <label class="inputs-group__input-label" for="weight-gain">Набор массы</label>
-                <input class="inputs-group__input-radio visually-hidden" id="not-decide" name="program"  value="not-decide" type="radio">
-                <label class="inputs-group__input-label" for="not-decide">Не знаю (Нужен ваш совет)</label>
-              </fieldset>
-            </div>
-          </div>
-          <p class="form-cat-program__group-title"><span class="form-cat-program__group-title-text form-cat-program__group-title-text--contacts">Контактные данные (владельца кота)</span></p>
-          <fieldset class="inputs-group inputs-group--type_contacts page__centerer">
+          <fieldset class="inputs-group inputs-group--type_contacts">
+            <p class="inputs-group__group-title"><span class="inputs-group__group-title-text inputs-group__group-title-text--contacts">Контактные данные (владельца кота)</span></p>
             <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
-            <label class="inputs-group__input-label inputs-group__input-label--email" for="email">
-              E-mail:*
-              <input class="inputs-group__input" id="email" name="email" type="email" required value="kuklachev@gmail.com" placeholder="Введите ваш E-mail">
-            </label>
-            <label class="inputs-group__input-label inputs-group__input-label--phone" for="phone">
-              Телефон:*
-              <input class="inputs-group__input" id="phone" name="phone" type="tel" required value="8 (960) 900-60-90" placeholder="Введите номер вашего телефона">
-            </label>
+            <div class="inputs-group inputs-group__contacts-container">
+              <label class="inputs-group__input-label inputs-group__input-label--email" for="email">
+                E-mail:*
+                <input class="inputs-group__input" id="email" name="email" type="email" required value="kuklachev@gmail.com" placeholder="Введите ваш E-mail">
+              </label>
+              <label class="inputs-group__input-label inputs-group__input-label--phone" for="phone">
+                Телефон:*
+                <input class="inputs-group__input" id="phone" name="phone" type="tel" required value="8 (960) 900-60-90" placeholder="Введите номер вашего телефона">
+              </label>
+            </div>
           </fieldset>
-          <p class="form-cat-program__group-title"><span class="form-cat-program__group-title-text form-cat-program__group-title-text--comment">Комментарий</span></p>
-          <label class="form-cat-program__comment-label page__centerer"><span class="visually-hidden">Комментарий</span><textarea class="form-cat-program__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea></label>
-          <p class="form-cat-program__group-title form-cat-program__group-title--additional"><span class="form-cat-program__group-title-text form-cat-program__group-title-text--additional">Дополнения</span></p>
-          <fieldset class="inputs-group inputs-group--type_additionals page__centerer">
+            <label class="inputs-group inputs-group__comment-label">
+              <p class="inputs-group__group-title"><span class="inputs-group__group-title-text inputs-group__group-title-text--comment">Комментарий</span></p>
+              <span class="visually-hidden">Комментарий</span>
+              <textarea class="inputs-group__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </label>
+          <fieldset class="inputs-group inputs-group--type_additionals">
+            <p class="inputs-group__group-title inputs-group__group-title--additional"><span class="inputs-group__group-title-text inputs-group__group-title-text--additional">Дополнения</span></p>
             <legend class="visually-hidden">Дополнения</legend>
-            <input class="inputs-group__input-checkbox visually-hidden" id="sugar-substitiute" name="additionals" value="sugar-substitiute" type="checkbox" checked><label class="inputs-group__input-label" for="sugar-substitiute">сахарозаменитель</label>
-            <input class="inputs-group__input-checkbox visually-hidden" id="water" name="additionals" value="water" type="checkbox"><label class="inputs-group__input-label" for="water">питьевая вода</label>
-            <input class="inputs-group__input-checkbox visually-hidden" id="milk" name="additionals" value="milk" type="checkbox"><label class="inputs-group__input-label" for="milk">молоко</label>
-            <input class="inputs-group__input-checkbox visually-hidden" id="vitamins" name="additionals" value="vitamins" type="checkbox"><label class="inputs-group__input-label" for="vitamins">витамины</label>
+            <div class="inputs-group__checkbox-container">
+              <input class="inputs-group__input-checkbox visually-hidden" id="sugar-substitiute" name="additionals" value="sugar-substitiute" type="checkbox" checked><label class="inputs-group__input-label" for="sugar-substitiute">сахарозаменитель</label>
+              <input class="inputs-group__input-checkbox visually-hidden" id="water" name="additionals" value="water" type="checkbox"><label class="inputs-group__input-label" for="water">питьевая вода</label>
+              <input class="inputs-group__input-checkbox visually-hidden" id="milk" name="additionals" value="milk" type="checkbox"><label class="inputs-group__input-label" for="milk">молоко</label>
+              <input class="inputs-group__input-checkbox visually-hidden" id="vitamins" name="additionals" value="vitamins" type="checkbox"><label class="inputs-group__input-label" for="vitamins">витамины</label>
+            </div>
           </fieldset>
-          <div class="form-cat-program__button-container page__centerer">
+          <div class="form-cat-program__button-container">
             <button class="form-cat-program__button" type="submit">отправить заявку</button>
             <p class="form-cat-program__requireds-description">* — Обязательные поля</p>
           </div>

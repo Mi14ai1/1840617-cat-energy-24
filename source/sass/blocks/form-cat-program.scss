@@ -1,36 +1,64 @@
 .form-cat-program {
+  --mark-border-color: #cdcdcd;
   --content-indent: calc(20px + (10vw - 32px) / 4.48);
   display: flex;
   flex-direction: column;
-  padding: 0;
-  padding-top: 39px;
+  justify-content: space-between;
+  padding-bottom: 32px;
 
   @media (--not-narrow-vp) {
-    padding-top: 66px;
+    padding-bottom: 72px;
+  }
+
+  @media (--middle-vp) {
+    padding-left: 39px;
   }
 
   @media (--wide-vp) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 61px;
-    max-width: 1440px;
-    margin: 0 auto;
+    padding-bottom: 82px;
+    overflow: hidden;
   }
-  --mark-border-color: #cdcdcd;
+}
+
+.form-cat-program__cat-info {
+  display: flex;
+  flex-direction: column;
+
+  @media (--wide-vp) {
+    grid-column: 1/-1;
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .form-cat-programm__cat-parameters {
   display: flex;
   flex-direction: column;
   gap: 27px;
-  margin-bottom: 27px;
 }
 
 .form-cat-program__border {
-  border-bottom: 1px solid #d9d9d9;
+  --block-under-line-color: #d9d9d9;
+  position: relative;
 
-  @media (--not-narrow-vp) {
-    border: none;
+  @media (--wide-vp) {
+    flex-grow: 1;
+  }
+}
+
+@media (--narrow-vp) {
+  .form-cat-program__border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(-1 * var(--content-indent));
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: var(--block-under-line-color);
   }
 }
 
@@ -38,23 +66,22 @@
   display: flex;
   flex-direction: column;
   gap: 21px;
-  margin-bottom: 32px;
+  padding-top: 34px;
 
   @media (--middle-vp) {
     flex-direction: row;
     justify-content: flex-start;
     gap: 61px;
-    margin-bottom: 72px;
+    padding-top: 54px;
   }
 
   @media (--wide-vp) {
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     grid-column: 1/-1;
     gap: 81px;
-    margin-bottom: 82px;
-    margin-left: 0;
-    margin-right: 0;
+    padding-top: 61px;
   }
 }
 
@@ -76,105 +103,8 @@
   }
 }
 
-.form-cat-program__comment-label {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  text-align: start;
 
-  @media (--middle-vp) {
-    margin-bottom: 65px;
-  }
-
-  @media (--wide-vp) {
-    grid-column: 1/-1;
-    margin-bottom: 67px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-.form-cat-program__group-title {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-grow: 1;
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: 400;
-  text-align: left;
-  margin: 0;
-  padding: 25px 0 36px 0;
-
-  @media (--not-narrow-vp) {
-    white-space: nowrap;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 76px;
-  }
-
-  @media (--wide-vp) {
-    grid-column: 1/-1;
-  }
-}
-
-.form-cat-program__group-title--additional {
-  @media (--not-narrow-vp) {
-    margin-bottom: 57px;
-  }
-}
-
-.form-cat-program__group-title-text {
-  flex: 1 0 auto;
-  max-width: 190px;
-  padding-right: 21px;
-  padding-left: var(--content-indent);
-
-  @media (--middle-vp) {
-    padding-left: 39px;
-    padding-right: 41px;
-  }
-}
-
-.form-cat-program__group-title-text--contacts {
-  @media (--not-narrow-vp) {
-    max-width: 512px;
-  }
-}
-
-.form-cat-program__group-title::after {
-  content: "";
-  top: 50%;
-  right: 0;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: var(--line-color);
-}
-
-
-.form-cat-program__group-title::before {
-  content: "";
-  display: block;
-  top: 50%;
-  width: 0;
-  height: 0;
-  background-color: var(--line-color);
-
-  @media (--middle-vp) {
-    width: 30px;
-    height: 2px;
-  }
-
-  @media (--wide-vp) {
-    width: 70px;
-    height: 2px;
-  }
-}
-
-.form-cat-program__comment {
+.inputs-group__comment {
   box-sizing: border-box;
   width: 100%;
   min-height: 150px;
@@ -182,7 +112,7 @@
   border: 1px solid var(--input-border-color);
 }
 
-.form-cat-program__comment::placeholder {
+.inputs-group__comment::placeholder {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;

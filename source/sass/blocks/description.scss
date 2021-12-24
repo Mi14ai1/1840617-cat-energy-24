@@ -14,11 +14,7 @@
   font-weight: 400;
   color: #000000;
   text-align: start;
-  margin: 0 0 40px 0;
-
-  @media (--not-narrow-vp) {
-    margin-bottom: 61px;
-  }
+  margin: 0;
 }
 
 @media (--not-narrow-vp) {
