@@ -22,7 +22,18 @@
           <p class="promo__text">Занялся собой? Займись котом!</p>
         </div>
         <div class="promo__image-container">
-          <img src="img/promo-chicken.png" alt="Корм для котов со вкусом курицы" class="promo__image">
+          <picture>
+            <source type="image/avif" srcset="./img/index/index-can-w@1x.avif 1x, ./img/index/index-can-w@2x.avif 2x" media="(min-width: 1271px)">
+            <source type="image/webp" srcset="./img/index/index-can-w@1x.webp 1x, ./img/index/index-can-w@2x.webp 2x" media="(min-width: 1271px)">
+            <source type="image/png" srcset="./img/index/index-can-w@1x.png 1x, ./img/index/index-can-w@1x.png 2x" media="(min-width:1271px)">
+            <source type="image/avif" srcset="./img/index/index-can-m@1x.avif 1x, ./img/index/index-can-m@2x.avif 2x" media="(min-width: 768px) and (max-width: 1270px)">
+            <source type="image/webp" srcset="./img/index/index-can-m@1x.webp 1x, ./img/index/index-can-m@2x.webp 2x" media="(min-width: 768px) and (max-width: 1270px)">
+            <source type="image/png" srcset="./img/index/index-can-m@1x.png 1x, ./img/index/index-can-m@1x.png 2x" media="(min-width: 768px) and (max-width: 1270px)">
+            <source type="image/avif" srcset="./img/index/index-can-s@1x.avif 1x, ./img/index/index-can-s@2x.avif 2x" media="(max-width: 767px)">
+            <source type="image/webp" srcset="./img/index/index-can-s@1x.webp 1x, ./img/index/index-can-s@2x.webp 2x" media="(max-width: 767px)">
+            <source type="image/png" srcset="./img/index/index-can-s@1x.png 1x, ./img/index/index-can-s@1x.png 2x" media="(max-width: 767px)">
+            <img class="promo__image" src="./img/index/index-can-s@1x.png" width="280" height="270" alt="Корм для котов со вкусом курицы">
+          </picture>
         </div>
         <a href="#" class="promo__button button">Подобрать программу</a>
       </div>
@@ -80,17 +91,29 @@
         </div>
         <div class="slider">
           <div class="slider__images">
-            <img src="img/cat-fat.png" alt="было" class="slider__image slider__image--was">
-            <img src="img/cat-skinny.png" alt="стало" class="slider__image slider__image--now">
-          </div>
-          <div class="slider__controls-was-now" hidden>
-            <span class="slider__controls-text slider__controls-text--was">Было</span>
-            <div class="slider__progress">
-              <div class="slider__progress-line">
-                <button type="button" class="slider__button"><span class="visually-hidden">кнопка слайдера</span></button>
-              </div>
+            <div class="slider__first-image">
+              <picture>
+                <source type="image/avif" srcset="./img/index/slider/cat-fat@1x.avif 1x, ./img/index/slider/cat-fat@2x.avif 2x">
+                <source type="image/webp" srcset="./img/index/slider/cat-fat@1x.webp 1x, ./img/index/slider/cat-fat@2x.webp 2x">
+                <source type="image/png" srcset="./img/index/slider/cat-fat@1x.png 1x, ./img/index/slider/cat-fat@2x.png 2x">
+                <img src="img/cat-fat.png" alt="было" class="slider__image slider__image--was" width="280" height="232">
+              </picture>
             </div>
-            <span class="slider__controls-text slider__controls-text--now">Стало</span>
+            <div class="slider__second-image">
+              <picture>
+                <source type="image/avif" srcset="./img/index/slider/cat-skinny@1x.avif 1x, ./img/index/slider/cat-skinny@2x.avif 2x">
+                <source type="image/webp" srcset="./img/index/slider/cat-skinny@1x.webp 1x, ./img/index/slider/cat-skinny@2x.webp 2x">
+                <source type="image/png" srcset="./img/index/slider/cat-skinny@1x.png 1x, ./img/index/slider/cat-skinny@2x.png 2x">
+                <img src="img/cat-skinny.png" alt="стало" class="slider__image slider__image--now" width="280" height="232">
+              </picture>
+            </div>
+          </div>
+          <div class="slider__range-container">
+            <span class="slider__text">Было</span>
+            <div class="cat-range">
+              <div class="cat-range__mark"></div>
+            </div>
+            <span class="slider__text">Стало</span>
           </div>
         </div>
       </div>

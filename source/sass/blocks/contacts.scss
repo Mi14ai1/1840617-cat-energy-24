@@ -1,10 +1,28 @@
 .contacts {
   position: relative;
+  margin: 0;
+
+  @media (--wide-vp) {
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .contacts__text {
   display: flex;
   justify-content: space-between;
+  background-color: #ffffff;
+
+  @media (--middle-vp) {
+    padding: 56px 50px;
+  }
+
+  @media (--wide-vp) {
+    padding: 56px 80px;
+    margin-top: 95px;
+    margin-left: 110px;
+    gap: 90px;
+  }
 }
 
 @media (--wide-vp) {
@@ -37,19 +55,44 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-  margin: 0;
   padding-right: 10px;
+  margin: 0;
 
   @media (--not-narrow-vp) {
     font-size: 20px;
     line-height: 26px;
+    padding: 0;
   }
 }
 
-.contacts__map {
+.contacts::after {
+  content: "";
+  display: block;
   min-height: 362px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (--narrow-vp) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/location/location-s@2x.png");
+    }
+
+    background-image: url("../../img/index/location/location-s@1x.png");
+  }
 
   @media (--middle-vp) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/location/location-m@2x.png");
+    }
+    background-image: url("../../img/index/location/location-m@1x.png");
     min-height: 400px;
+  }
+
+  @media (--wide-vp) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/location/location-l@2x.png");
+    }
+    background-image: url("../../img/index/location/location-l@1x.png");
   }
 }

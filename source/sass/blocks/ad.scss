@@ -1,13 +1,23 @@
 .ad {
+  --gradient-color: rgba(104, 183, 56, 0.85);
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   box-sizing: border-box;
-  background: url("../../img/gift.jpg");
+  background:
+
+    linear-gradient(var(--gradient-color), var(--gradient-color)),
+    url("../../img/catalog/ad/s/gift@1x.webp");
   background-size: cover;
   min-height: 290px;
   padding: 0 25px 43px;
+
+  @media (min-resolution: 2dppx) {
+    background:
+      linear-gradient(var(--gradient-color), var(--gradient-color)),
+      url("../../img/catalog/ad/s/gift@2x.webp");
+  }
 
   @media (min-width: 490px) {
     flex-direction: row;
@@ -16,6 +26,15 @@
     padding-right: 124px;
     padding-top: 71px;
     padding-bottom: 69px;
+    background:
+      linear-gradient(var(--gradient-color), var(--gradient-color)),
+      url("../../img/catalog/ad/m/gift@1x.webp");
+
+    @media (min-resolution: 2dppx) {
+      background:
+        linear-gradient(var(--gradient-color), var(--gradient-color)),
+        url("../../img/catalog/ad/m/gift@2x.webp");
+    }
   }
 
   @media (--wide-vp) {
@@ -23,6 +42,15 @@
     height: 100%;
     padding: 0 10px 43px;
     margin: 0;
+    background:
+      linear-gradient(var(--gradient-color), var(--gradient-color)),
+      url("../../img/catalog/ad/l/gift@1x.webp");
+
+    @media (min-resolution: 2dppx) {
+      background:
+        linear-gradient(var(--gradient-color), var(--gradient-color)),
+        url("../../img/catalog/ad/l/gift@2x.webp");
+    }
   }
 }
 

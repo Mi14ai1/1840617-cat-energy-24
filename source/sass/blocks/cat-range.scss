@@ -1,0 +1,58 @@
+.cat-range {
+  --bg-color: #ffffff;
+  --border-color: #cdcdcd;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  box-shadow:
+    2px 0 0 3px var(--bg-color),
+    -2px 0 0 3px var(--bg-color),
+    0 0 0 4px var(--border-color),
+    2px 0 0 4px var(--border-color),
+    -2px 0 0 4px var(--border-color);
+  width: 86px;
+  height: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  @media (--not-narrow-vp) {
+    height: 6px;
+    width: 426px;
+    overflow: visible;
+    box-shadow: none;
+    background-color: #dcdcdc;
+  }
+}
+
+.cat-range__mark {
+  --range-color: #68b738;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--range-color);
+  border-radius: 50%;
+
+  @media (--not-narrow-vp) {
+    width: 34px;
+    height: 34px;
+    background-image: url("../../icons/sprite.svg#range-mark");
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+
+@media (--narrow-vp) {
+  .cat-range__mark::before {
+    content: "";
+    position: absolute;
+    right: 3px;
+    width: 100vw;
+    height: 6px;
+    background-color: var(--range-color);
+  }
+}
