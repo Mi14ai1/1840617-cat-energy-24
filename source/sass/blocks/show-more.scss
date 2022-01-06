@@ -75,9 +75,17 @@
   color: var(--base-font-color);
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #f2f2f2;
+  background-color: var(--show-more-button-color);
   padding: 10px 10px;
   margin: 0;
+}
+
+.show-more__button:hover {
+  --show-more-button-color: #ebebeb;
+}
+
+.show-more__button:active {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .show-more::before {

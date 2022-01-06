@@ -1,4 +1,15 @@
 .cat-range {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  outline: none;
+}
+
+.cat-range__range-container {
   --bg-color: #ffffff;
   --border-color: #cdcdcd;
   position: relative;
@@ -23,6 +34,19 @@
     overflow: visible;
     box-shadow: none;
     background-color: #dcdcdc;
+  }
+}
+
+.cat-range__text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (--not-narrow-vp) {
+    padding: 2px 0;
+    border-bottom: 2px dotted #cdcdcd;
   }
 }
 
@@ -54,5 +78,33 @@
     width: 100vw;
     height: 6px;
     background-color: var(--range-color);
+  }
+}
+
+.cat-range:hover {
+  .cat-range__text {
+    @media (--not-narrow-vp) {
+      border-bottom-style: solid;
+    }
+  }
+
+  .cat-range__range-container .cat-range__mark {
+    @media (--not-narrow-vp) {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+  }
+}
+
+.cat-range:active {
+  .cat-range__text {
+    @media (--not-narrow-vp) {
+      border-bottom-color: transparent;
+    }
+  }
+
+  .cat-range__range-container .cat-range__mark {
+    @media (--not-narrow-vp) {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
   }
 }

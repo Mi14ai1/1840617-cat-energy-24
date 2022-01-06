@@ -30,3 +30,15 @@
     flex-grow: 0;
   }
 }
+
+.footer__logo-link {
+  display: block;
+}
+
+.footer__logo-link:hover {
+  opacity: 0.8;
+}
+
+.footer__logo-link:active {
+  opacity: 0.6;
+}

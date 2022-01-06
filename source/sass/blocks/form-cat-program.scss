@@ -109,6 +109,14 @@
   }
 }
 
+.form-cat-program__button:hover {
+  --button-color: #5eaa2f;
+}
+
+.form-cat-program__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 .inputs-group__comment {
   box-sizing: border-box;

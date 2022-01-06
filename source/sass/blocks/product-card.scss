@@ -84,6 +84,15 @@
   padding: 10px;
 }
 
+.product-card__button:hover {
+  --button-color: #5eaa2f;
+}
+
+.product-card__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .product-card__item-value {
   text-align: right;
 }

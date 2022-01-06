@@ -1,4 +1,5 @@
 .social {
+  --social-color: #666666;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,11 +54,25 @@
 }
 
 .social__link--facebook {
-  width: 10px;
+  width: 16px;
   height: 18px;
 
   @media (--not-narrow-vp) {
     width: 28px;
     height: 33px;
   }
+}
+
+.social__link:hover > .social__icon {
+  --social-color: #68b738;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}
+
+.social__icon {
+  fill: #666666;
+  width: 100%;
+  height: 100%;
 }

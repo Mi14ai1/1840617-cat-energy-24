@@ -1,6 +1,6 @@
 var firstImage = document.querySelector(".slider__first-image");
 var secondImage = document.querySelector(".slider__second-image");
-var catRange = document.querySelector(".cat-range");
+var catRange = document.querySelector(".cat-range__range-container");
 var rangeRect = catRange.getBoundingClientRect();
 var rangeMark = document.querySelector(".cat-range__mark");
 rangeMark.onmousedown = function (event) {
