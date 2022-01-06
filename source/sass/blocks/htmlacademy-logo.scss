@@ -21,6 +21,17 @@
   width: 100%;
 }
 
+.htmlacademy-logo__link::after {
+  content: "";
+  width: 27px;
+  height: 34px;
+  background-color: var(--footer-logo-color);
+  mask-image: url("../../icons/sprite.svg#htmlacademy");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+}
+
 .htmlacademy-logo__icon {
   content: "";
   display: inline-block;

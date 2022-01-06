@@ -54,7 +54,8 @@
   height: 60px;
   background-color: var(--description-icon-bg-color);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 40px;
+  background-position: 50%;
 
   @media (--not-narrow-vp) {
     width: 80px;
