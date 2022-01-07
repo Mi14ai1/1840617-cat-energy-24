@@ -144,12 +144,12 @@
 .nutrition-programm__link::after {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 12px;
+  width: 33px;
+  height: 10px;
   background-image: url("../../icons/sprite.svg#arrow-active");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: -9px 50%;
   margin-left: 15px;
 
   @media (--middle-vp) {
@@ -164,13 +164,9 @@
 .nutrition-programm__link:hover::after {
   content: "";
   display: inline-block;
-  background-image: url("../../icons/sprite.svg#arrow-active");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 33px;
-  height: 10px;
+  background-position: 0 50%;
   margin-left: 15px;
+  transition: 200ms;
 
   @media (--middle-vp) {
     margin-left: 25px;

@@ -16,10 +16,7 @@
   z-index: -1;
   width: 100%;
   height: calc(100% - 47px);
-
-  @media (--not-wide-vp) {
-    background-color: var(--example-background-color);
-  }
+  background-color: var(--example-background-color);
 
   @media (--not-narrow-vp) {
     height: 462px;

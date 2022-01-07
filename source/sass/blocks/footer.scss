@@ -1,7 +1,5 @@
 .footer {
-  @media (--not-wide-vp) {
-    background-color: var(--footer-background-color);
-  }
+  background-color: var(--footer-background-color);
 }
 
 .footer__container {
