@@ -1,17 +1,14 @@
 {% set pageId = 0 %}
 {% set permalink = pages[pageId].path %}
-
 <!DOCTYPE html>
 <html class="page" lang="ru">
 {% include "./templates/head.twig" %}
-
-<body class="page__body">
-
-
+{% import "./templates/macros.twig" as macros%}
+  <body class="page__body">
 
   {% include "./templates/header.twig" %}
 
-  <main class="main">
+    <main class="main">
     <h1 class="page__title-hidden visually-hidden">
       Cat energy
     </h1>
@@ -22,18 +19,15 @@
           <p class="promo__text">Занялся собой? Займись котом!</p>
         </div>
         <div class="promo__image-container">
-          <picture>
-            <source type="image/avif" srcset="./img/index/index-can-w@1x.avif 1x, ./img/index/index-can-w@2x.avif 2x" media="(min-width: 1271px)">
-            <source type="image/avif" srcset="./img/index/index-can-m@1x.avif 1x, ./img/index/index-can-m@2x.avif 2x" media="(min-width: 768px) and (max-width: 1270px)">
-            <source type="image/avif" srcset="./img/index/index-can-s@1x.avif 1x, ./img/index/index-can-s@2x.avif 2x" media="(max-width: 767px)">
-            <source type="image/webp" srcset="./img/index/index-can-w@1x.webp 1x, ./img/index/index-can-w@2x.webp 2x" media="(min-width: 1271px)">
-            <source type="image/webp" srcset="./img/index/index-can-m@1x.webp 1x, ./img/index/index-can-m@2x.webp 2x" media="(min-width: 768px) and (max-width: 1270px)">
-            <source type="image/webp" srcset="./img/index/index-can-s@1x.webp 1x, ./img/index/index-can-s@2x.webp 2x" media="(max-width: 767px)">
-            <source type="image/png" srcset="./img/index/index-can-w@1x.png 1x, ./img/index/index-can-w@1x.png 2x" media="(min-width:1271px)">
-            <source type="image/png" srcset="./img/index/index-can-m@1x.png 1x, ./img/index/index-can-m@1x.png 2x" media="(min-width: 768px) and (max-width: 1270px)">
-            <source type="image/png" srcset="./img/index/index-can-s@1x.png 1x, ./img/index/index-can-s@1x.png 2x" media="(max-width: 767px)">
-            <img class="promo__image" src="./img/index/index-can-s@1x.png" width="280" height="270" alt="Корм для котов со вкусом курицы">
-          </picture>
+            {{macros.picture(
+              "promo__image",
+              "./img/index/",
+              "index-can",
+              ".png",
+              "Корм для котов",
+              "280",
+              "270"
+            )}}
         </div>
         <a href="#" class="promo__button button">Подобрать программу</a>
       </div>
@@ -119,8 +113,8 @@
       </div>
     </section>
     {% include "./templates/contacts.twig" %}
-  </main>
+    </main>
   {% include "./templates/footer.twig" %}
-</body>
+  </body>
 
 </html>

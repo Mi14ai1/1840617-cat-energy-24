@@ -1,10 +1,9 @@
 {% set pageId = 1 %}
 {% set permalink = pages[pageId].path %}
-
 <!DOCTYPE html>
 <html class="page" lang="ru">
 {% include "./templates/head.twig" %}
-
+{% import "./templates/macros.twig" as macros%}
 <body class="page__body">
 
   {% include "./templates/header.twig" %}
@@ -15,18 +14,15 @@
     </div>
     <ul class="products-list page__centerer">
       <li class="product-card">
-        <picture>
-          <source type="image/avif" srcset="./img/catalog/wide/chicken-500@1x.avif 1x, ./img/catalog/wide/chicken-500@2x.avif 2x" media="(min-width: 1271px)">
-          <source type="image/avif" srcset="./img/catalog/tablet/chicken-500@1x.avif 1x, ./img/catalog/tablet/chicken-500@2x.avif 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/avif" srcset="./img/catalog/mobile/chicken-500@1x.avif 1x, ./img/catalog/mobile/chicken-500@2x.avif 2x" media="(max-width: 767px)">
-          <source type="image/webp" srcset="./img/catalog/wide/chicken-500@1x.webp 1x, ./img/catalog/wide/chicken-500@2x.webp 2x" media="(min-width: 1271px)">
-          <source type="image/webp" srcset="./img/catalog/tablet/chicken-500@1x.webp 1x, ./img/catalog/tablet/chicken-500@2x.webp 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/webp" srcset="./img/catalog/mobile/chicken-500@1x.webp 1x, ./img/catalog/mobile/chicken-500@2x.webp 2x" media="(max-width: 767px)">
-          <source type="image/png" srcset="./img/catalog/wide/chicken-500@1x.png 1x, ./img/catalog/wide/chicken-500@2x.png 2x" media="(min-width:1271px)">
-          <source type="image/png" srcset="./img/catalog/tablet/chicken-500@1x.png 1x, ./img/catalog/tablet/chicken-500@2x.png 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/png" srcset="./img/catalog/mobile/chicken-500@1x.png 1x, ./img/catalog/mobile/chicken-500@2x.png 2x" media="(max-width: 767px)">
-          <img class="product-card__image" width="140" height="112" src="./img/catalog/mobile/chicken-500@1x.png" alt="Курица">
-        </picture>
+          {{macros.picture(
+            "product-card__image",
+            "./img/catalog/",
+            "chicken-500",
+            ".png",
+            "Корм для котов со вкусом курицы",
+            "140",
+            "112"
+          )}}
         <div class="product-card__text">
           <span class="product-card__title">Cat Energy PRO 500&nbsp;г</span>
           <div class="product-card__items">
@@ -41,18 +37,15 @@
         <a href="#" class="product-card__button">заказать</a>
       </li>
       <li class="product-card">
-        <picture>
-          <source type="image/avif" srcset="./img/catalog/wide/chicken-1000@1x.avif 1x, ./img/catalog/wide/chicken-1000@2x.avif 2x" media="(min-width: 1271px)">
-          <source type="image/avif" srcset="./img/catalog/tablet/chicken-1000@1x.avif 1x, ./img/catalog/tablet/chicken-1000@2x.avif 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/avif" srcset="./img/catalog/mobile/chicken-1000@1x.avif 1x, ./img/catalog/mobile/chicken-1000@2x.avif 2x" media="(max-width: 767px)">
-          <source type="image/webp" srcset="./img/catalog/wide/chicken-1000@1x.webp 1x, ./img/catalog/wide/chicken-1000@2x.webp 2x" media="(min-width: 1271px)">
-          <source type="image/webp" srcset="./img/catalog/tablet/chicken-1000@1x.webp 1x, ./img/catalog/tablet/chicken-1000@2x.webp 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/webp" srcset="./img/catalog/mobile/chicken-1000@1x.webp 1x, ./img/catalog/mobile/chicken-1000@2x.webp 2x" media="(max-width: 767px)">
-          <source type="image/png" srcset="./img/catalog/wide/chicken-1000@1x.png 1x, ./img/catalog/wide/chicken-1000@2x.png 2x" media="(min-width:1271px)">
-          <source type="image/png" srcset="./img/catalog/tablet/chicken-1000@1x.png 1x, ./img/catalog/tablet/chicken-1000@2x.png 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/png" srcset="./img/catalog/mobile/chicken-1000@1x.png 1x, ./img/catalog/mobile/chicken-1000@2x.png 2x" media="(max-width: 767px)">
-          <img class="product-card__image" width="140" height="112" src="./img/catalog/mobile/chicken-1000@1x.png" alt="Курица">
-        </picture>
+        {{macros.picture(
+          "product-card__image",
+          "./img/catalog/",
+          "chicken-1000",
+          ".png",
+          "Корм для котов со вкусом курицы",
+          "140",
+          "112"
+        )}}
         <div class="product-card__text">
           <span class="product-card__title">Cat Energy PRO 1000&nbsp;г</span>
           <div class="product-card__items">
@@ -67,18 +60,15 @@
         <a href="#" class="product-card__button">заказать</a>
       </li>
       <li class="product-card">
-        <picture>
-          <source type="image/avif" srcset="./img/catalog/wide/fish-500@1x.avif 1x, ./img/catalog/wide/fish-500@2x.avif 2x" media="(min-width: 1271px)">
-          <source type="image/avif" srcset="./img/catalog/tablet/fish-500@1x.avif 1x, ./img/catalog/tablet/fish-500@2x.avif 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/avif" srcset="./img/catalog/mobile/fish-500@1x.avif 1x, ./img/catalog/mobile/fish-500@2x.avif 2x" media="(max-width: 767px)">
-          <source type="image/webp" srcset="./img/catalog/wide/fish-500@1x.webp 1x, ./img/catalog/wide/fish-500@2x.webp 2x" media="(min-width: 1271px)">
-          <source type="image/webp" srcset="./img/catalog/tablet/fish-500@1x.webp 1x, ./img/catalog/tablet/fish-500@2x.webp 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/webp" srcset="./img/catalog/mobile/fish-500@1x.webp 1x, ./img/catalog/mobile/fish-500@2x.webp 2x" media="(max-width: 767px)">
-          <source type="image/png" srcset="./img/catalog/wide/fish-500@1x.png 1x, ./img/catalog/wide/fish-500@2x.png 2x" media="(min-width:1271px)">
-          <source type="image/png" srcset="./img/catalog/tablet/fish-500@1x.png 1x, ./img/catalog/tablet/fish-500@2x.png 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/png" srcset="./img/catalog/mobile/fish-500@1x.png 1x, ./img/catalog/mobile/fish-500@2x.png 2x" media="(max-width: 767px)">
-          <img class="product-card__image" width="140" height="112" src="./img/catalog/mobile/fish-500@1x.png" alt="Курица">
-        </picture>
+        {{macros.picture(
+          "product-card__image",
+          "./img/catalog/",
+          "fish-500",
+          ".png",
+          "Корм для котов со вкусом рыбы",
+          "140",
+          "112"
+        )}}
         <div class="product-card__text">
           <span class="product-card__title">Cat Energy PRO 500&nbsp;г</span>
           <div class="product-card__items">
@@ -93,18 +83,15 @@
         <a href="#" class="product-card__button">заказать</a>
       </li>
       <li class="product-card">
-        <picture>
-          <source type="image/avif" srcset="./img/catalog/wide/fish-1000@1x.avif 1x, ./img/catalog/wide/fish-1000@2x.avif 2x" media="(min-width: 1271px)">
-          <source type="image/avif" srcset="./img/catalog/tablet/fish-1000@1x.avif 1x, ./img/catalog/tablet/fish-1000@2x.avif 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/avif" srcset="./img/catalog/mobile/fish-1000@1x.avif 1x, ./img/catalog/mobile/fish-1000@2x.avif 2x" media="(max-width: 767px)">
-          <source type="image/webp" srcset="./img/catalog/wide/fish-1000@1x.webp 1x, ./img/catalog/wide/fish-1000@2x.webp 2x" media="(min-width: 1271px)">
-          <source type="image/webp" srcset="./img/catalog/tablet/fish-1000@1x.webp 1x, ./img/catalog/tablet/fish-1000@2x.webp 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/webp" srcset="./img/catalog/mobile/fish-1000@1x.webp 1x, ./img/catalog/mobile/fish-1000@2x.webp 2x" media="(max-width: 767px)">
-          <source type="image/png" srcset="./img/catalog/wide/fish-1000@1x.png 1x, ./img/catalog/wide/fish-1000@2x.png 2x" media="(min-width:1271px)">
-          <source type="image/png" srcset="./img/catalog/tablet/fish-1000@1x.png 1x, ./img/catalog/tablet/fish-1000@2x.png 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/png" srcset="./img/catalog/mobile/fish-1000@1x.png 1x, ./img/catalog/mobile/fish-1000@2x.png 2x" media="(max-width: 767px)">
-          <img class="product-card__image" width="140" height="112" src="./img/catalog/mobile/fish-1000@1x.png" alt="Курица">
-        </picture>
+        {{macros.picture(
+          "product-card__image",
+          "./img/catalog/",
+          "fish-1000",
+          ".png",
+          "Корм для котов со вкусом рыбы",
+          "140",
+          "112"
+        )}}
         <div class="product-card__text">
           <span class="product-card__title">Cat Energy PRO 1000&nbsp;г</span>
           <div class="product-card__items">
@@ -119,18 +106,15 @@
         <a href="#" class="product-card__button">заказать</a>
       </li>
       <li class="product-card">
-        <picture>
-          <source type="image/avif" srcset="./img/catalog/wide/buckwheat-500@1x.avif 1x, ./img/catalog/wide/buckwheat-500@2x.avif 2x" media="(min-width: 1271px)">
-          <source type="image/avif" srcset="./img/catalog/tablet/buckwheat-500@1x.avif 1x, ./img/catalog/tablet/buckwheat-500@2x.avif 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/avif" srcset="./img/catalog/mobile/buckwheat-500@1x.avif 1x, ./img/catalog/mobile/buckwheat-500@2x.avif 2x" media="(max-width: 767px)">
-          <source type="image/webp" srcset="./img/catalog/wide/buckwheat-500@1x.webp 1x, ./img/catalog/wide/buckwheat-500@2x.webp 2x" media="(min-width: 1271px)">
-          <source type="image/webp" srcset="./img/catalog/tablet/buckwheat-500@1x.webp 1x, ./img/catalog/tablet/buckwheat-500@2x.webp 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/webp" srcset="./img/catalog/mobile/buckwheat-500@1x.webp 1x, ./img/catalog/mobile/buckwheat-500@2x.webp 2x" media="(max-width: 767px)">
-          <source type="image/png" srcset="./img/catalog/wide/buckwheat-500@1x.png 1x, ./img/catalog/wide/buckwheat-500@2x.png 2x" media="(min-width:1271px)">
-          <source type="image/png" srcset="./img/catalog/tablet/buckwheat-500@1x.png 1x, ./img/catalog/tablet/buckwheat-500@2x.png 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/png" srcset="./img/catalog/mobile/buckwheat-500@1x.png 1x, ./img/catalog/mobile/buckwheat-500@2x.png 2x" media="(max-width: 767px)">
-          <img class="product-card__image" width="140" height="112" src="./img/catalog/mobile/buckwheat-500@1x.png" alt="Курица">
-        </picture>
+        {{macros.picture(
+          "product-card__image",
+          "./img/catalog/",
+          "buckwheat-500",
+          ".png",
+          "Гречка",
+          "140",
+          "112"
+        )}}
         <div class="product-card__text">
           <span class="product-card__title">Cat Energy slim 500&nbsp;г</span>
           <div class="product-card__items">
@@ -145,18 +129,15 @@
         <a href="#" class="product-card__button">заказать</a>
       </li>
       <li class="product-card">
-        <picture>
-          <source type="image/avif" srcset="./img/catalog/wide/buckwheat-1000@1x.avif 1x, ./img/catalog/wide/buckwheat-1000@2x.avif 2x" media="(min-width: 1271px)">
-          <source type="image/avif" srcset="./img/catalog/tablet/buckwheat-1000@1x.avif 1x, ./img/catalog/tablet/buckwheat-1000@2x.avif 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/avif" srcset="./img/catalog/mobile/buckwheat-1000@1x.avif 1x, ./img/catalog/mobile/buckwheat-1000@2x.avif 2x" media="(max-width: 767px)">
-          <source type="image/webp" srcset="./img/catalog/wide/buckwheat-1000@1x.webp 1x, ./img/catalog/wide/buckwheat-1000@2x.webp 2x" media="(min-width: 1271px)">
-          <source type="image/webp" srcset="./img/catalog/tablet/buckwheat-1000@1x.webp 1x, ./img/catalog/tablet/buckwheat-1000@2x.webp 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/webp" srcset="./img/catalog/mobile/buckwheat-1000@1x.webp 1x, ./img/catalog/mobile/buckwheat-1000@2x.webp 2x" media="(max-width: 767px)">
-          <source type="image/png" srcset="./img/catalog/wide/buckwheat-1000@1x.png 1x, ./img/catalog/wide/buckwheat-1000@2x.png 2x" media="(min-width:1271px)">
-          <source type="image/png" srcset="./img/catalog/tablet/buckwheat-1000@1x.png 1x, ./img/catalog/tablet/buckwheat-1000@2x.png 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/png" srcset="./img/catalog/mobile/buckwheat-1000@1x.png 1x, ./img/catalog/mobile/buckwheat-1000@2x.png 2x" media="(max-width: 767px)">
-          <img class="product-card__image" width="140" height="112" src="./img/catalog/mobile/buckwheat-1000@1x.png" alt="Курица">
-        </picture>
+        {{macros.picture(
+          "product-card__image",
+          "./img/catalog/",
+          "buckwheat-1000",
+          ".png",
+          "Гречка",
+          "140",
+          "112"
+        )}}
         <div class="product-card__text">
           <span class="product-card__title">Cat Energy slim 1000&nbsp;г</span>
           <div class="product-card__items">
@@ -171,18 +152,15 @@
         <a href="#" class="product-card__button">заказать</a>
       </li>
       <li class="product-card">
-        <picture>
-          <source type="image/avif" srcset="./img/catalog/wide/rice-500@1x.avif 1x, ./img/catalog/wide/rice-500@2x.avif 2x" media="(min-width: 1271px)">
-          <source type="image/avif" srcset="./img/catalog/tablet/rice-500@1x.avif 1x, ./img/catalog/tablet/rice-500@2x.avif 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/avif" srcset="./img/catalog/mobile/rice-500@1x.avif 1x, ./img/catalog/mobile/rice-500@2x.avif 2x" media="(max-width: 767px)">
-          <source type="image/webp" srcset="./img/catalog/wide/rice-500@1x.webp 1x, ./img/catalog/wide/rice-500@2x.webp 2x" media="(min-width: 1271px)">
-          <source type="image/webp" srcset="./img/catalog/tablet/rice-500@1x.webp 1x, ./img/catalog/tablet/rice-500@2x.webp 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/webp" srcset="./img/catalog/mobile/rice-500@1x.webp 1x, ./img/catalog/mobile/rice-500@2x.webp 2x" media="(max-width: 767px)">
-          <source type="image/png" srcset="./img/catalog/wide/rice-500@1x.png 1x, ./img/catalog/wide/rice-500@2x.png 2x" media="(min-width:1271px)">
-          <source type="image/png" srcset="./img/catalog/tablet/rice-500@1x.png 1x, ./img/catalog/tablet/rice-500@2x.png 2x" media="(min-width: 768px) and (max-width: 1270px)">
-          <source type="image/png" srcset="./img/catalog/mobile/rice-500@1x.png 1x, ./img/catalog/mobile/rice-500@2x.png 2x" media="(max-width: 767px)">
-          <img class="product-card__image" width="140" height="112" src="./img/catalog/mobile/rice-500@1x.png" alt="Курица">
-        </picture>
+        {{macros.picture(
+          "product-card__image",
+          "./img/catalog/",
+          "rice-500",
+          ".png",
+          "Рис",
+          "140",
+          "112"
+        )}}
         <div class="product-card__text">
           <span class="product-card__title">Cat Energy slim 500&nbsp;г</span>
           <div class="product-card__items">

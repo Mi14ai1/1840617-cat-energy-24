@@ -35,7 +35,7 @@
     top: -112px;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../../img/index/index-background-w@1x.webp");
+      url("../../img/index/index-background-l@1x.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100% 50%;
@@ -45,7 +45,7 @@
     @media (min-resolution: 2dppx) {
       background-image:
         linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url("../../img/index/index-background-w@2x.webp");
+        url("../../img/index/index-background-l@2x.webp");
     }
   }
 }

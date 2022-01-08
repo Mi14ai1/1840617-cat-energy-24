@@ -8,7 +8,7 @@
   background:
 
     linear-gradient(var(--gradient-color), var(--gradient-color)),
-    url("../../img/catalog/ad/s/gift@1x.webp");
+    url("../../img/catalog/ad/gift-s@1x.webp");
   background-size: cover;
   min-height: 290px;
   padding: 0 25px 43px;
@@ -16,7 +16,7 @@
   @media (min-resolution: 2dppx) {
     background:
       linear-gradient(var(--gradient-color), var(--gradient-color)),
-      url("../../img/catalog/ad/s/gift@2x.webp");
+      url("../../img/catalog/ad/gift-s@2x.webp");
   }
 
   @media (min-width: 490px) {
@@ -28,12 +28,12 @@
     padding-bottom: 69px;
     background:
       linear-gradient(var(--gradient-color), var(--gradient-color)),
-      url("../../img/catalog/ad/m/gift@1x.webp");
+      url("../../img/catalog/ad/gift-m@1x.webp");
 
     @media (min-resolution: 2dppx) {
       background:
         linear-gradient(var(--gradient-color), var(--gradient-color)),
-        url("../../img/catalog/ad/m/gift@2x.webp");
+        url("../../img/catalog/ad/gift-m@2x.webp");
     }
   }
 
@@ -44,12 +44,12 @@
     margin: 0;
     background:
       linear-gradient(var(--gradient-color), var(--gradient-color)),
-      url("../../img/catalog/ad/l/gift@1x.webp");
+      url("../../img/catalog/ad/gift-l@1x.webp");
 
     @media (min-resolution: 2dppx) {
       background:
         linear-gradient(var(--gradient-color), var(--gradient-color)),
-        url("../../img/catalog/ad/l/gift@2x.webp");
+        url("../../img/catalog/ad/gift-l@2x.webp");
     }
   }
 }
