@@ -1,13 +1,11 @@
 {% set pageId = 1 %}
 {% set permalink = pages[pageId].path %}
-<!DOCTYPE html>
-<html class="page" lang="ru">
-{% include "./templates/head.twig" %}
-{% import "./templates/macros.twig" as macros%}
-<body class="page__body">
+{% extends "./templates/layout.twig" %}
 
+{% block page__header %}
   {% include "./templates/header.twig" %}
-
+{% endblock page__header %}
+{% block page__main %}
   <main class="main">
     <div class="catalog-title page__centerer">
       <h1 class="catalog-title__text">Каталог продукции</h1>
@@ -221,7 +219,4 @@
 
     {% include "./templates/contacts.twig" %}
   </main>
-  {% include "./templates/footer.twig" %}
-</body>
-
-</html>
+  {% endblock page__main %}
