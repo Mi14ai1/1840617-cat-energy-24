@@ -75,24 +75,24 @@
 
   @media (--narrow-vp) {
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index/location/location-s@2x.png");
+      background-image: url("../../img/index/location/location-s@2x.webp");
     }
 
-    background-image: url("../../img/index/location/location-s@1x.png");
+    background-image: url("../../img/index/location/location-s@1x.webp");
   }
 
   @media (--middle-vp) {
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index/location/location-m@2x.png");
+      background-image: url("../../img/index/location/location-m@2x.webp");
     }
-    background-image: url("../../img/index/location/location-m@1x.png");
+    background-image: url("../../img/index/location/location-m@1x.webp");
     min-height: 400px;
   }
 
   @media (--wide-vp) {
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index/location/location-l@2x.png");
+      background-image: url("../../img/index/location/location-l@2x.webp");
     }
-    background-image: url("../../img/index/location/location-l@1x.png");
+    background-image: url("../../img/index/location/location-l@1x.webp");
   }
 }
