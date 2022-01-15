@@ -1,6 +1,7 @@
 .contacts {
   position: relative;
   margin: 0;
+  line-height: 0;
 
   @media (--wide-vp) {
     margin: 0 auto;
@@ -12,6 +13,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
+  padding: 26px 0;
 
   @media (--middle-vp) {
     padding: 56px 50px;
@@ -65,34 +67,12 @@
   }
 }
 
-.contacts::after {
-  content: "";
-  display: block;
-  min-height: 362px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.contacts__map {
+  height: 362px;
+  width: 100%;
+  border: none;
 
-  @media (--narrow-vp) {
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index/location/location-s@2x.webp");
-    }
-
-    background-image: url("../../img/index/location/location-s@1x.webp");
-  }
-
-  @media (--middle-vp) {
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index/location/location-m@2x.webp");
-    }
-    background-image: url("../../img/index/location/location-m@1x.webp");
-    min-height: 400px;
-  }
-
-  @media (--wide-vp) {
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index/location/location-l@2x.webp");
-    }
-    background-image: url("../../img/index/location/location-l@1x.webp");
+  @media (--not-narrow-vp) {
+    height: 400px;
   }
 }

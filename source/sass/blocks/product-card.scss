@@ -32,6 +32,11 @@
   }
 }
 
+.product-card__specification-link {
+  text-decoration: none;
+  text-align: center;
+}
+
 .product-card__items {
   display: grid;
   grid-template-columns: 1fr 1fr;

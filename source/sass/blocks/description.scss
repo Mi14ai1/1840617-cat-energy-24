@@ -1,9 +1,27 @@
 .description {
+  position: relative;
   padding-top: 20px;
+
+  @media (--narrow-vp) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
 
   @media (--middle-vp) {
     padding-bottom: 60px;
-    border-bottom: 1px  solid var(--line-after-description-color);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      --content-indent: calc(20px + (10vw - 32px) / 4.48);
+      left: calc(-1 * var(--content-indent));
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: var(--line-after-description-color);
+    }
   }
 }
 
@@ -38,11 +56,11 @@
   }
 
   @media (--middle-vp) {
-    max-width: 197px;
+    max-width: 247px;
   }
 
   @media (--wide-vp) {
-    max-width: 246px;
+    max-width: 230px;
   }
 }
 

@@ -6,10 +6,11 @@
   justify-content: flex-end;
   box-sizing: border-box;
   background:
-
     linear-gradient(var(--gradient-color), var(--gradient-color)),
     url("../../img/catalog/ad/gift-s@1x.webp");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 290px;
   padding: 0 25px 43px;
 
@@ -17,6 +18,10 @@
     background:
       linear-gradient(var(--gradient-color), var(--gradient-color)),
       url("../../img/catalog/ad/gift-s@2x.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: 490px) {
@@ -30,10 +35,18 @@
       linear-gradient(var(--gradient-color), var(--gradient-color)),
       url("../../img/catalog/ad/gift-m@1x.webp");
 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     @media (min-resolution: 2dppx) {
       background:
         linear-gradient(var(--gradient-color), var(--gradient-color)),
         url("../../img/catalog/ad/gift-m@2x.webp");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 
@@ -46,10 +59,18 @@
       linear-gradient(var(--gradient-color), var(--gradient-color)),
       url("../../img/catalog/ad/gift-l@1x.webp");
 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     @media (min-resolution: 2dppx) {
       background:
         linear-gradient(var(--gradient-color), var(--gradient-color)),
         url("../../img/catalog/ad/gift-l@2x.webp");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 }

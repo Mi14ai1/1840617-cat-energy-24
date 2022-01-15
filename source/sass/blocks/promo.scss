@@ -14,7 +14,7 @@
   min-height: 480px;
 
   @media (--middle-vp) {
-    min-height: 790px;
+    min-height: 810px;
     padding-top: 40px;
   }
 
@@ -25,6 +25,7 @@
     height: 100%;
     min-height: 636px;
     padding-bottom: 82px;
+    padding-top: 111px;
   }
 }
 
@@ -37,10 +38,12 @@
 
   @media (--middle-vp) {
     gap: 41px;
+    padding: 0 80px;
   }
 
   @media (--wide-vp) {
     gap: 40px;
+    padding: 0 80px;
   }
 }
 
@@ -101,10 +104,13 @@
 
   @media (--middle-vp) {
     width: 709px;
+    bottom: -40px;
   }
 
   @media (--wide-vp) {
     width: 552px;
+    transform: translateX(-165px);
+    bottom: 110px;
   }
 }
 
@@ -140,7 +146,7 @@
     min-height: 54px;
     padding: 0;
     top: 270px;
-    left: 120px;
+    left: 80px;
     bottom: 100%;
   }
 
@@ -154,6 +160,7 @@
     max-width: 244px;
     min-height: 54px;
     padding: 0 0;
+    margin-left: 80px;
   }
 }
 

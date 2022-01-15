@@ -44,6 +44,10 @@
   justify-content: flex-start;
   width: 100%;
   overflow: hidden;
+
+  @media (--not-narrow-vp) {
+    width: 50%;
+  }
 }
 
 .slider__second-image {
@@ -52,4 +56,8 @@
   justify-content: flex-end;
   width: 0%;
   overflow: hidden;
+
+  @media (--not-narrow-vp) {
+    width: 50%;
+  }
 }
