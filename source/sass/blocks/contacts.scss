@@ -76,3 +76,17 @@
     height: 400px;
   }
 }
+
+.contacts__map--noscript {
+  display: none;
+}
+
+.contacts__map-image {
+  height: 362px;
+  width: 100%;
+  border: none;
+
+  @media (--not-narrow-vp) {
+    height: 400px;
+  }
+}

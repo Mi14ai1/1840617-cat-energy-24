@@ -1,5 +1,37 @@
 .background-promo {
   position: relative;
+  --background-height: 302px;
+
+  @media (--not-narrow-vp) {
+    --background-height: 694px;
+  }
+}
+
+@media (--wide-vp) {
+  .background-promo::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50%;
+    top: -112px;
+    height: var(--background-height);
+    right: 0;
+    z-index: 0;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),;
+  }
+}
+
+@media (--narrow-vp) {
+  .background-promo::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: var(--background-height);
+    right: 0;
+    z-index: 0;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),;
+  }
 }
 
 .background-promo::after {
@@ -7,20 +39,17 @@
   display: block;
   position: absolute;
   top: 0;
-  height: 302px;
+  height: var(--background-height);
   width: 100%;
   background-size: cover;
+  background-color: var(--index-background-base-color);
   z-index: -1;
 
   @media (--narrow-vp) {
-    background-image:
-      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../../img/index/index-background-s@1x.webp");
+    background-image: url("../../img/index/index-background-s@1x.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url("../../img/index/index-background-s@2x.webp");
+      background-image: url("../../img/index/index-background-s@2x.webp");
     }
     left: 0;
   }
@@ -33,19 +62,20 @@
     position: absolute;
     right: 0;
     top: -112px;
-    background-image:
-      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../../img/index/index-background-l@1x.webp");
+    background-image: url("../../img/index/index-background-l@1x.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100% 50%;
     max-width: 720px;
-    height: 694px;
+    height: var(--background-height);
 
     @media (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url("../../img/index/index-background-l@2x.webp");
+      background-image: url("../../img/index/index-background-l@2x.webp");
     }
+  }
+
+  @media (min-width: 1280px) and (max-width: 1440px) {
+    background-size: cover;
+    width: 50%;
   }
 }
