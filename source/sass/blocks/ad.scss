@@ -5,10 +5,11 @@
   flex-direction: column;
   justify-content: flex-end;
   box-sizing: border-box;
-  background-color: #444444;
   background:
     linear-gradient(var(--gradient-color), var(--gradient-color)),
     url("../../img/catalog/ad/gift-s@1x.webp");
+
+  background-color: #444444;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
