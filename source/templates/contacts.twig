@@ -1,11 +1,10 @@
-<section class="contacts page__centerer">
+<section class="contacts">
   <h2 class="visually-hidden">Наш адрес</h2>
   <div class="contacts__text page__centerer">
     <p class="contacts__lead-text">приглашаем<br>к&nbsp;сотрудничеству<br>дилеров!</p>
     <p class="contacts__adress">ул. Большая<br>Конюшенная, д. 19/8 <span class="contacts__adress-city">Санкт-Петербург</span></p>
   </div>
-  <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac17026e0183ea3a65e599f68834bca86394c52e2ca6f560e5f0c0c1af66fc19f&amp;source=constructor" ></iframe>
-  <div class="contacts__map contacts__map--noscript">
+  <noscript class="contacts__map">
     {{macros.picture(
       "contacts__map-image",
       "./img/location/",
@@ -15,5 +14,6 @@
       "320",
       "362"
     )}}
-  </div>
+  </noscript>
+  <iframe class="contacts__map  contacts__map--noscript" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac17026e0183ea3a65e599f68834bca86394c52e2ca6f560e5f0c0c1af66fc19f&amp;source=constructor" ></iframe>
 </section>

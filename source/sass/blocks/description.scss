@@ -26,7 +26,7 @@
 }
 
 .description__title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--accent-font);
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -98,7 +98,7 @@
 }
 
 .description__text {
-  font-family: "Arial", sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 18px;
   margin: 0;
@@ -141,7 +141,7 @@
     z-index: -1;
     right: 0;
     bottom: 0;
-    font-family: "Oswald", sans-serif;
+    font-family: var(--accent-font);
     font-size: 280px;
     line-height: 280px;
     font-weight: 400;

@@ -14,6 +14,7 @@
   justify-content: space-between;
   background-color: #ffffff;
   padding: 26px 0;
+  gap: 10px;
 
   @media (--middle-vp) {
     padding: 56px 50px;
@@ -35,7 +36,7 @@
 }
 
 .contacts__adress {
-  font-family: "Arial", sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 20px;
   color: var(--base-font-color);
@@ -52,7 +53,7 @@
 }
 
 .contacts__lead-text {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--accent-font);
   font-size: 16px;
   line-height: 20px;
   color: #111111;

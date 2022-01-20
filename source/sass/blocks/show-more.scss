@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: flex-end;
   gap: 23px;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--accent-font);
   font-weight: 400;
   text-align: center;
   padding: 72px 20px 25px;
@@ -56,7 +56,7 @@
 }
 
 .show-more__regular-text {
-  font-family: "Arial", sans-serif;
+  font-family: var(--main-font);
   font-size: 12px;
   line-height: 16px;
   color: var(--base-font-color);
@@ -79,6 +79,7 @@
   background-color: var(--show-more-button-color);
   padding: 10px 10px;
   margin: 0;
+  outline: none;
 }
 
 .show-more__button:hover {
@@ -87,6 +88,10 @@
 
 .show-more__button:active {
   color: rgba(68, 68, 68, 0.3);
+}
+
+.show-more__button:focus-visible {
+  box-shadow: inset 0 0 0 1px var(--focus-border-color);
 }
 
 .show-more::before {

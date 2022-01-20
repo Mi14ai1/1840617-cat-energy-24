@@ -9,6 +9,10 @@
   outline: none;
 }
 
+.cat-range:focus-visible {
+  box-shadow: inset 0 0 0 1px var(--focus-border-color);
+}
+
 .cat-range__range-container {
   --bg-color: #ffffff;
   --border-color: #cdcdcd;
@@ -38,7 +42,7 @@
 }
 
 .cat-range__text {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--accent-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

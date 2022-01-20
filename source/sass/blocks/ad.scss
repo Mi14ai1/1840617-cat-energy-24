@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: flex-end;
   box-sizing: border-box;
+  background-color: #444444;
   background:
     linear-gradient(var(--gradient-color), var(--gradient-color)),
     url("../../img/catalog/ad/gift-s@1x.webp");
@@ -99,7 +100,7 @@
 }
 
 .ad__text {
-  font-family: "Arial", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;

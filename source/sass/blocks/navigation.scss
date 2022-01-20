@@ -142,7 +142,7 @@
 
 .navigation__link {
   display: block;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--accent-font);
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -150,8 +150,8 @@
   text-align: center;
   text-decoration: none;
   color: inherit;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding: 22px 20px 24px;
+  overflow-wrap: anywhere;
 
   &:hover {
     opacity: 0.6;

@@ -1,6 +1,7 @@
 .background-promo {
   position: relative;
   --background-height: 302px;
+  --back-cat-color: #4f4e53;
 
   @media (--not-narrow-vp) {
     --background-height: 694px;
@@ -62,15 +63,16 @@
     position: absolute;
     right: 0;
     top: -112px;
-    background-image: url("../../img/index/index-background-l@1x.webp");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100% 50%;
-    max-width: 720px;
+    background:
+      right/ contain no-repeat url("../../img/index/index-background-l@1x.webp"),
+      left/ cover linear-gradient(var(--back-cat-color), var(--back-cat-color));
+    max-width: 50%;
     height: var(--background-height);
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index/index-background-l@2x.webp");
+      background:
+        right/ contain no-repeat url("../../img/index/index-background-l@2x.webp"),
+        left/ cover linear-gradient(var(--back-cat-color), var(--back-cat-color));
     }
   }
 

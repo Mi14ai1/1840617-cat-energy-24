@@ -76,7 +76,7 @@
 }
 
 .nutrition-programm__title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--accent-font);
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -99,7 +99,7 @@
 }
 
 .nutrition-programm__text {
-  font-family: "Arial", sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -122,7 +122,7 @@
 .nutrition-programm__link {
   display: flex;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--accent-font);
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;

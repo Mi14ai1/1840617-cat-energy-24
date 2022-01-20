@@ -1,0 +1,9 @@
+.class-on-input--error {
+  --input-border-color: #ff8282;
+  box-shadow: inset 0 0 0 2px  var(--input-border-color);
+
+  & + .inputs-group__contacts-icon {
+    stroke: #ff8282;
+    fill: #ff8282;
+  }
+}

@@ -43,7 +43,7 @@
 }
 
 .promo__title {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--accent-font);
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -66,7 +66,7 @@
 }
 
 .promo__text {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--accent-font);
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -120,7 +120,7 @@
   bottom: 0;
   display: block;
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--accent-font);
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
