@@ -23,6 +23,17 @@
   width: 100%;
 }
 
+.htmlacademy-logo__link::before {
+  content: "";
+  width: 114px;
+  height: 18px;
+  background-color: var(--footer-logo-color);
+  mask-image: url("../../icons/sprite.svg#htmlacademy-text");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+}
+
 .htmlacademy-logo__link::after {
   content: "";
   width: 27px;
