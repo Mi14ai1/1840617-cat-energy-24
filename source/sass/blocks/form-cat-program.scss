@@ -61,7 +61,7 @@
     bottom: 0;
     left: calc(-1 * var(--content-indent));
     display: block;
-    width: 100vw;
+    width: calc(100vw - 12px);
     height: 1px;
     background-color: var(--block-under-line-color);
   }

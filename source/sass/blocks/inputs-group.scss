@@ -100,6 +100,7 @@
 .inputs-group__checkbox-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 13px;
 
   @media (--middle-vp) {

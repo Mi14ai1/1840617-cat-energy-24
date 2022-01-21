@@ -29,9 +29,13 @@
   @media (--middle-vp) {
     display: grid;
     grid-template-columns: 1fr 270px;
+    align-content: flex-start;
   }
 
   @media (--wide-vp) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-content: flex-start;
     max-width: 570px;
     margin: 0;
   }
@@ -107,12 +111,14 @@
   margin: 0;
 
   @media (--middle-vp) {
+    grid-column: 1/2;
     font-size: 16px;
     line-height: 24px;
     text-align: start;
   }
 
   @media (--wide-vp) {
+    grid-column: 1/-1;
     font-size: 16px;
     line-height: 24px;
     text-align: start;
@@ -134,10 +140,11 @@
   padding-top: 15px;
 
   @media (--not-narrow-vp) {
-    border-top: none;
+    grid-column: 1/-1;
     font-size: 20px;
     line-height: 30px;
     text-align: start;
+    border-top: none;
   }
 }
 

@@ -114,13 +114,11 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 38px;
     flex: 1 0 auto;
-    padding-bottom: 0;
-    padding-top: 0;
   }
 }
 
 .additional__item:first-child {
-  border-top: 1px solid var(--additionals-border-color);
+  box-shadow: 0 -1px 0 0 var(--additionals-border-color);
 }
 
 .additional__item-name {

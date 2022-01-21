@@ -76,6 +76,9 @@
 
   @media (--not-narrow-vp) {
     transform: none;
+    gap: 10px;
+    max-width: 610px;
+    flex-wrap: wrap;
   }
 
   @media (--middle-vp) {

@@ -154,7 +154,7 @@
   @media (--middle-vp) {
     position: absolute;
     left: 50%;
-    bottom: 303px;
+    top: -73px;
     transform: translateX(-50%);
     width: 168px;
     height: 200px;
@@ -163,7 +163,7 @@
   @media (--wide-vp) {
     position: absolute;
     left: 50%;
-    bottom: 314px;
+    top: -73px;
     transform: translateX(-50%);
     width: 172px;
     height: 200px;
@@ -172,10 +172,10 @@
 
 .product-card:nth-child(even) .product-card__image {
   @media (--middle-vp) {
-    bottom: 315px;
+    top: -85px;
   }
 
   @media (--wide-vp) {
-    bottom: 320px;
+    top: -85px;
   }
 }
