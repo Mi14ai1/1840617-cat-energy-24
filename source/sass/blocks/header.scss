@@ -106,3 +106,18 @@
     display: none;
   }
 }
+
+@media (--narrow-vp) {
+  .header.header--nojs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__logo-link.header__logo-link--nojs {
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .header__logo-word.header__logo-word--nojs {
+    transform: none;
+  }
+}

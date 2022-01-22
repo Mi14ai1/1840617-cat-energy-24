@@ -1,14 +1,14 @@
 <div class="page__centerer">
-  <header class="header">
+  <header class="header header--nojs">
     <div class="header__logo-container">
-      <a href="index.html" class="header__logo-link" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
+      <a href="index.html" class="header__logo-link header__logo-link--nojs" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
         <picture>
           <source type="image/svg+xml" srcset="./img/logo/logo-desktop.svg" media="(min-width: 1439px)">
           <source type="image/svg+xml" srcset="./img/logo/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1439px)">
           <source type="image/svg+xml" srcset="./img/logo/logo-mobile.svg" media="(max-width: 767px)">
           <img src="./img/logo/logo-mobile.svg" alt="Перейти на главную интернет-магазина CatEnergy" class="header__logo-icon" width="34" height="38">
         </picture>
-        <img src="./img/logo/logo-words.svg" alt="Перейти на главную интернет-магазина CatEnergy" class="header__logo-word" width="101" height="19">
+        <img src="./img/logo/logo-words.svg" alt="Перейти на главную интернет-магазина CatEnergy" class="header__logo-word header__logo-word--nojs" width="101" height="19">
         <span class="visually-hidden">Перейти на главную</span>
       </a>
     </div>
@@ -16,7 +16,7 @@
       <button class="navigation__menu-button" type="button">
         <span class="visually-hidden">Кнопка вызова меню</span>
       </button>
-      <ul class="navigation__list {% if permalink == "index.html" %} alternative-text-color {% endif %}">
+      <ul class="navigation__list navigation__list--nojs {% if permalink == "index.html" %} alternative-text-color {% endif %}">
         {% for page in pages %}
           <li class="navigation__item">
             <a

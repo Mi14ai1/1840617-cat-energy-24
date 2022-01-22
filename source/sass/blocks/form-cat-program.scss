@@ -61,9 +61,10 @@
     bottom: 0;
     left: calc(-1 * var(--content-indent));
     display: block;
-    width: calc(100vw - 12px);
+    width: 50vw;
     height: 1px;
     background-color: var(--block-under-line-color);
+    box-shadow: 50vw 0 0 0 var(--block-under-line-color);
   }
 }
 

@@ -178,3 +178,10 @@
     padding: 8px 0 8px;
   }
 }
+
+@media (--narrow-vp) {
+  .navigation__list.navigation__list--nojs {
+    position: relative;
+    transform: none;
+  }
+}
