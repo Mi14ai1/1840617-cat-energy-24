@@ -36,13 +36,17 @@
 
 .htmlacademy-logo__link::after {
   content: "";
-  width: 27px;
-  height: 34px;
+  width: 28px;
+  height: 41px;
   background-color: var(--footer-logo-color);
   mask-image: url("../../icons/sprite.svg#htmlacademy");
   mask-repeat: no-repeat;
   mask-size: cover;
   mask-position: center;
+
+  @media (--wide-vp) {
+    transform: translateY(2px);
+  }
 }
 
 .htmlacademy-logo__icon {

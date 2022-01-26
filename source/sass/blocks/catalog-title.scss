@@ -1,16 +1,16 @@
 .catalog-title {
-  padding: 27px 10px 35px;
+  padding: 27px 10px 40px;
 
   @media (--narrow-vp) {
-    border-top: 1px solid var(--catalog-title-border-color);
+    margin-left: -3px;
   }
 
   @media (--middle-vp) {
-    padding: 70px 30px 157px;
+    padding: 62px 0 163px;
   }
 
   @media (--wide-vp) {
-    padding: 74px 110px 157px;
+    padding: 74px 110px 165px;
   }
 }
 

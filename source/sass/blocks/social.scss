@@ -1,5 +1,6 @@
 .social {
   --social-color: #666666;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,7 +9,15 @@
   flex-wrap: wrap;
   border-top: 1px solid #d9d9d9;
 
+  @media (--narrow-vp) {
+    left: -4px;
+    top: 3px;
+    padding: 4px 77px;
+  }
+
   @media (--middle-vp) {
+    position: relative;
+    left: 15px;
     width: 129px;
     flex-grow: 0;
     border: transparent;
@@ -20,10 +29,12 @@
     flex-grow: 0;
     border: transparent;
     order: 0;
+    margin-right: -27px;
   }
 }
 
 .social__link {
+  position: relative;
   display: block;
   text-decoration: none;
 }
@@ -41,6 +52,7 @@
   @media (--not-narrow-vp) {
     width: 30px;
     height: 32px;
+    transform: translateX(-2px);
   }
 }
 
@@ -51,6 +63,7 @@
   @media (--not-narrow-vp) {
     width: 23px;
     height: 23px;
+    left: 2px;
   }
 }
 
@@ -59,8 +72,9 @@
   height: 18px;
 
   @media (--not-narrow-vp) {
-    width: 28px;
-    height: 33px;
+    width: 29px;
+    height: 34px;
+    transform: translate(-2px, -1px);
   }
 }
 

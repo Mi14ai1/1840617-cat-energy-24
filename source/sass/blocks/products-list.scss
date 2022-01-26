@@ -1,11 +1,13 @@
 .products-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-  column-gap: 40px;
-  row-gap: 25px;
   padding: 0;
   margin: 0 auto;
   list-style: none;
+
+  @media (--not-narrow-vp) {
+    column-gap: 40px;
+  }
 
   @media (--middle-vp) {
     padding: 0 30px 68px;
@@ -14,7 +16,7 @@
   }
 
   @media (--wide-vp) {
-    padding: 0 110px 76px;
+    padding: 0 110px 78px;
     column-gap: 80px;
     row-gap: 144px;
   }

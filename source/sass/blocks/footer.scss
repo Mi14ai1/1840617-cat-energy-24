@@ -24,6 +24,10 @@
   align-self: center;
   padding: 39px 0 32px;
 
+  @media (--narrow-vp) {
+    padding-bottom: 23px;
+  }
+
   @media (--not-narrow-vp) {
     flex-grow: 0;
   }

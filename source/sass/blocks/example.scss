@@ -1,9 +1,14 @@
 .example {
   position: relative;
-  padding: 47px 0;
+  padding: 47px 0 67px;
+
+  @media (--middle-vp) {
+    padding: 43px 0 51px;
+  }
 
   @media (--wide-vp) {
     padding-bottom: 0;
+    padding-top: 29px;
   }
 }
 
@@ -20,6 +25,10 @@
 
   @media (--not-narrow-vp) {
     height: 462px;
+  }
+
+  @media (--wide-vp) {
+    height: calc(100% - 167px);
   }
 }
 
@@ -51,30 +60,30 @@
   }
 
   @media (--middle-vp) {
-    gap: 70px;
+    gap: 91px;
     align-items: center;
   }
 
   @media (--wide-vp) {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 70px;
-    padding-bottom: 65px;
+    padding-bottom: 22px;
   }
 }
 
 .example__facts {
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 20px;
 
   @media (--middle-vp) {
-    gap: 54px;
+    gap: 45px;
   }
 
   @media (--wide-vp) {
-    justify-content: space-between;
+    justify-content: flex-start;
     max-width: 436px;
+    gap: 0;
   }
 }
 
@@ -93,7 +102,7 @@
   }
 
   @media (--wide-vp) {
-    flex-grow: 1;
+    margin-bottom: 57px;
   }
 }
 
@@ -109,6 +118,14 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (--middle-vp) {
+    padding-right: 10px;
+  }
+
+  @media (--wide-vp) {
+    padding-top: 70px;
+  }
 }
 
 .example__facts-list {
@@ -117,14 +134,21 @@
   row-gap: 34px;
   margin: 0;
 
+  @media (--narrow-vp) {
+    column-gap: 31px;
+  }
+
   @media (--middle-vp) {
     display: flex;
     column-gap: 42px;
     row-gap: 9px;
+    padding-top: 6px;
   }
 
   @media (--wide-vp) {
     max-width: 366px;
+    row-gap: 60px;
+    padding-top: 68px;
   }
 }
 
@@ -153,12 +177,14 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    gap: 8px;
   }
 
   @media (--wide-vp) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 64px;
   }
 }
 
@@ -203,6 +229,11 @@
   bottom: 0;
   transform: translate(-50%, 50%);
 
+  @media (--not-narrow-vp) {
+    transform: translate(-50%, 9px);
+    width: 130px;
+  }
+
   @media (--middle-vp) {
     background-color: var(--explanation-middle-text-bgcolor);
   }
@@ -213,6 +244,10 @@
   position: absolute;
   top: 0;
   transform: translateY(50%);
+
+  @media (--not-narrow-vp) {
+    top: -3px;
+  }
 }
 
 .example__facts-item-explanation--mass::before,
@@ -226,7 +261,7 @@
 
   @media (--not-narrow-vp) {
     width: 162px;
-    height: 77px;
+    height: 72px;
   }
 }
 

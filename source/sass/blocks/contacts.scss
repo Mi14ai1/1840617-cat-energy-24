@@ -17,14 +17,14 @@
   gap: 10px;
 
   @media (--middle-vp) {
-    padding: 56px 50px;
+    padding: 60px 39px 60px 40px;
   }
 
   @media (--wide-vp) {
-    padding: 56px 80px;
+    padding: 60px 80px;
     margin-top: 95px;
     margin-left: 110px;
-    gap: 90px;
+    gap: 96px;
   }
 }
 
@@ -49,6 +49,11 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  @media (--wide-vp) {
+    text-align: left;
+    margin-top: -3px;
   }
 }
 

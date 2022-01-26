@@ -1,0 +1,5 @@
+.contacts-background {
+  @media (--not-wide-vp) {
+    background-color: var(--contacts--background-color);
+  }
+}

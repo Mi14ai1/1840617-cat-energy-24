@@ -6,7 +6,7 @@
   {% include "./templates/header.twig" %}
 {% endblock page__header %}
 {% block page__main %}
-<main class="main">
+<main class="main main--top-line">
   <div class="page__centerer page__form-title-container">
     <h1 class="page__form-title">Подбор программы</h1>
     <p class="request-to-user">Заполните анкету, и&nbsp;мы&nbsp;подберем<br>программу питания для вашего кота</p>
@@ -15,15 +15,15 @@
       <div class="form-cat-program__cat-info">
         <fieldset class="inputs-group inputs-group--type_cat form-cat-program__border">
           <legend class="inputs-group__group-title-hidden visually-hidden">Имя, возраст, вес</legend>
-          <label class="inputs-group__input-label" for="catname">
+          <label class="inputs-group__input-label inputs-group__input-label--cat-name" for="catname">
             Имя:*
             <input class="inputs-group__input" id="catname" name="catname" type="text" required value="Барсик" placeholder="Введите значение">
           </label>
-          <label class="inputs-group__input-label" for="weight">
+          <label class="inputs-group__input-label inputs-group__input-label--cat-weight" for="weight">
             Вес (кг):*
             <input class="inputs-group__input" id="weight" name="weight" type="number" required value="7" placeholder="Введите значение">
           </label>
-          <label class="inputs-group__input-label" for="age">
+          <label class="inputs-group__input-label inputs-group__input-label--cat-age" for="age">
             Возраст (лет):
             <input class="inputs-group__input" id="age" name="age" type="number" value="7" placeholder="Введите значение">
           </label>
@@ -62,7 +62,7 @@
           <textarea class="inputs-group__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       <fieldset class="inputs-group inputs-group--type_additionals">
-        <legend class="inputs-group__group-title inputs-group__group-title--additional"><span class="inputs-group__group-title-text inputs-group__group-title-text--additional">Дополнения</span></legend>
+        <legend class="inputs-group__group-title inputs-group__group-title--additional"><span class="inputs-group__group-title-text inputs-group__group-title-text--additional">Дополнительно</span></legend>
         <div class="inputs-group__checkbox-container">
           <input class="inputs-group__input-checkbox visually-hidden" id="sugar-substitiute" name="additionals" value="sugar-substitiute" type="checkbox" checked><label class="inputs-group__input-label" for="sugar-substitiute">сахарозаменитель</label>
           <input class="inputs-group__input-checkbox visually-hidden" id="water" name="additionals" value="water" type="checkbox"><label class="inputs-group__input-label" for="water">питьевая вода</label>
